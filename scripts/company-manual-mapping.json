@@ -1,0 +1,337 @@
+{
+  "000554.SZ": [
+    {"productName": "汽油", "commodityKey": "cj:price:92#汽油"},
+    {"productName": "柴油", "commodityKey": "cj:price:0#柴油"},
+    {"productName": "液化气", "commodityKey": "cj:price:液化气"}
+  ],
+  "000731.SZ": [
+    {"productName": "尿素", "commodityKey": "cj:price:尿素(华东)"},
+    {"productName": "复合肥", "commodityKey": "cj:price:复合肥"},
+    {"productName": "三聚氰胺", "commodityKey": "cj:price:三聚氰胺"}
+  ],
+  "000792.SZ": [
+    {"productName": "氯化钾", "commodityKey": "cj:price:氯化钾"},
+    {"productName": "碳酸锂", "commodityKey": "cj:price:碳酸锂"},
+    {"productName": "纯碱", "commodityKey": "cj:price:轻质纯碱（华东）"}
+  ],
+  "000819.SZ": [
+    {"productName": "聚丙烯", "commodityKey": "cj:price:PP（余姚市场J340/扬子）"},
+    {"productName": "MTBE", "commodityKey": "cj:price:MTBE"},
+    {"productName": "液化气", "commodityKey": "cj:price:液化气"}
+  ],
+  "000930.SZ": [
+    {"productName": "淀粉糖", "commodityKey": "cj:price:葡萄糖"},
+    {"productName": "味精", "commodityKey": "cj:price:味精"},
+    {"productName": "氨基酸", "commodityKey": "cj:price:赖氨酸"}
+  ],
+  "000990.SZ": [
+    {"productName": "甲醇", "commodityKey": "cj:price:甲醇（长三角）"},
+    {"productName": "聚烯烃", "commodityKey": "cj:price:PP（余姚市场J340/扬子）"},
+    {"productName": "清洁能源", "commodityKey": "cj:price:LNG"}
+  ],
+  "002092.SZ": [
+    {"productName": "PVC", "commodityKey": "cj:price:PVC（华东电石法）"},
+    {"productName": "烧碱", "commodityKey": "cj:price:32%隔膜烧碱（华东）"},
+    {"productName": "粘胶短纤", "commodityKey": "cj:price:粘胶短纤（华东）"}
+  ],
+  "002100.SZ": [
+    {"productName": "饲料", "commodityKey": "cj:price:豆粕"},
+    {"productName": "生猪", "commodityKey": "cj:price:生猪"},
+    {"productName": "兽药", "commodityKey": "cj:price:VE"}
+  ],
+  "002258.SZ": [
+    {"productName": "草铵膦", "commodityKey": "cj:price:草铵膦"},
+    {"productName": "氯氟吡氧乙酸", "commodityKey": "cj:price:使它隆"},
+    {"productName": "毒莠定", "commodityKey": "cj:price:毒莠定"}
+  ],
+  "600028.SH": [
+    {"productName": "原油", "commodityKey": "lme:price:WTI原油"},
+    {"productName": "汽油", "commodityKey": "cj:price:92#汽油"},
+    {"productName": "柴油", "commodityKey": "cj:price:0#柴油"}
+  ],
+  "600063.SH": [
+    {"productName": "PVA", "commodityKey": "cj:price:聚乙烯醇PVA"},
+    {"productName": "醋酸乙烯", "commodityKey": "cj:price:醋酸乙烯（华东）"},
+    {"productName": "水泥", "commodityKey": "cj:price:P.O42.5水泥"}
+  ],
+  "600111.SH": [
+    {"productName": "稀土", "commodityKey": "cj:price:氧化镨钕"},
+    {"productName": "稀土永磁", "commodityKey": "cj:price:N35钕铁硼"},
+    {"productName": "抛光粉", "commodityKey": "cj:price:氧化铈"}
+  ],
+  "600160.SH": [
+    {"productName": "制冷剂", "commodityKey": "cj:price:R32"},
+    {"productName": "含氟聚合物", "commodityKey": "cj:price:PVDF"},
+    {"productName": "基础化工", "commodityKey": "cj:price:32%隔膜烧碱（华东）"}
+  ],
+  "600230.SH": [
+    {"productName": "TDI", "commodityKey": "cj:price:TDI（华东）"},
+    {"productName": "聚碳酸酯", "commodityKey": "cj:price:PC"},
+    {"productName": "烧碱", "commodityKey": "cj:price:32%隔膜烧碱（华东）"}
+  ],
+  "600299.SH": [
+    {"productName": "蛋氨酸", "commodityKey": "cj:price:蛋氨酸"},
+    {"productName": "维生素A", "commodityKey": "cj:price:VA"},
+    {"productName": "维生素E", "commodityKey": "cj:price:VE"}
+  ],
+  "600301.SH": [
+    {"productName": "锡", "commodityKey": "lme:price:锡"},
+    {"productName": "锌", "commodityKey": "lme:price:锌"},
+    {"productName": "锑", "commodityKey": "cj:price:锑锭"}
+  ],
+  "600352.SH": [
+    {"productName": "染料", "commodityKey": "cj:price:分散染料"},
+    {"productName": "助剂", "commodityKey": "cj:price:还原剂"},
+    {"productName": "中间体", "commodityKey": "cj:price:间苯二胺"}
+  ],
+  "600392.SH": [
+    {"productName": "稀土", "commodityKey": "cj:price:氧化镨钕"},
+    {"productName": "锆", "commodityKey": "cj:price:氧氯化锆"},
+    {"productName": "钛", "commodityKey": "cj:price:钛精矿"}
+  ],
+  "600426.SH": [
+    {"productName": "醋酸", "commodityKey": "cj:price:醋酸（华东）"},
+    {"productName": "DMF", "commodityKey": "cj:price:DMF（华东）"},
+    {"productName": "己二酸", "commodityKey": "cj:price:己二酸（华东）"}
+  ],
+  "600459.SH": [
+    {"productName": "铂", "commodityKey": "lme:price:铂"},
+    {"productName": "钯", "commodityKey": "lme:price:钯"},
+    {"productName": "铑", "commodityKey": "lme:price:铑"}
+  ],
+  "600499.SH": [
+    {"productName": "电解铜箔", "commodityKey": "lme:price:铜"},
+    {"productName": "电线电缆", "commodityKey": "cj:price:铜杆"},
+    {"productName": "高分子材料", "commodityKey": "cj:price:聚烯烃"}
+  ],
+  "600500.SH": [
+    {"productName": "环氧树脂", "commodityKey": "cj:price:环氧树脂"},
+    {"productName": "橡胶助剂", "commodityKey": "cj:price:防老剂"},
+    {"productName": "工程塑料", "commodityKey": "cj:price:PA66"}
+  ],
+  "600549.SH": [
+    {"productName": "钨", "commodityKey": "cj:price:仲钨酸铵"},
+    {"productName": "稀土", "commodityKey": "cj:price:氧化镨钕"},
+    {"productName": "钴", "commodityKey": "lme:price:钴"}
+  ],
+  "600746.SH": [
+    {"productName": "醋酸", "commodityKey": "cj:price:醋酸（华东）"},
+    {"productName": "氯碱", "commodityKey": "cj:price:32%隔膜烧碱（华东）"},
+    {"productName": "硫酸", "commodityKey": "cj:price:硫酸"}
+  ],
+  "600866.SH": [
+    {"productName": "味精", "commodityKey": "cj:price:味精"},
+    {"productName": "核苷酸", "commodityKey": "cj:price:I+G"},
+    {"productName": "原料药", "commodityKey": "cj:price:肌苷"}
+  ],
+  "600955.SH": [
+    {"productName": "苯酚", "commodityKey": "cj:price:苯酚(华东)"},
+    {"productName": "丙酮", "commodityKey": "cj:price:丙酮(华东)"},
+    {"productName": "双酚A", "commodityKey": "cj:price:双酚A"}
+  ],
+  "600961.SH": [
+    {"productName": "锌", "commodityKey": "lme:price:锌"},
+    {"productName": "铟", "commodityKey": "cj:price:金属铟"},
+    {"productName": "金银", "commodityKey": "lme:price:黄金"}
+  ],
+  "601061.SH": [
+    {"productName": "铌", "commodityKey": "lme:price:铌"},
+    {"productName": "铜", "commodityKey": "lme:price:铜"},
+    {"productName": "铁矿石", "commodityKey": "lme:price:铁矿石"}
+  ],
+  "601117.SH": [
+    {"productName": "工程服务", "commodityKey": "cj:price:MDI"},
+    {"productName": "化工品贸易", "commodityKey": "cj:price:轻质纯碱（华东）"},
+    {"productName": "设计咨询", "commodityKey": "cj:price:32%隔膜烧碱（华东）"}
+  ],
+  "601118.SH": [
+    {"productName": "天然橡胶", "commodityKey": "cj:price:天然橡胶（上海地区）"},
+    {"productName": "轮胎", "commodityKey": "cj:price:全钢胎"},
+    {"productName": "乳胶", "commodityKey": "cj:price:浓缩乳胶"}
+  ],
+  "601216.SH": [
+    {"productName": "PVC", "commodityKey": "cj:price:PVC（华东电石法）"},
+    {"productName": "烧碱", "commodityKey": "cj:price:32%隔膜烧碱（华东）"},
+    {"productName": "电石", "commodityKey": "cj:price:电石（华东）"}
+  ],
+  "601233.SH": [
+    {"productName": "涤纶长丝", "commodityKey": "cj:price:涤纶POY（华东）"},
+    {"productName": "PTA", "commodityKey": "cj:price:PTA（华东）"},
+    {"productName": "聚酯切片", "commodityKey": "cj:price:PET切片（华东）"}
+  ],
+  "601600.SH": [
+    {"productName": "氧化铝", "commodityKey": "lme:price:氧化铝"},
+    {"productName": "原铝", "commodityKey": "lme:price:铝"},
+    {"productName": "镓", "commodityKey": "cj:price:金属镓"}
+  ],
+  "601678.SH": [
+    {"productName": "烧碱", "commodityKey": "cj:price:32%隔膜烧碱（华东）"},
+    {"productName": "环氧丙烷", "commodityKey": "cj:price:环氧丙烷（华东）"},
+    {"productName": "三氯乙烯", "commodityKey": "cj:price:三氯乙烯"}
+  ],
+  "601857.SH": [
+    {"productName": "原油", "commodityKey": "lme:price:WTI原油"},
+    {"productName": "天然气", "commodityKey": "cj:price:LNG"},
+    {"productName": "成品油", "commodityKey": "cj:price:92#汽油"}
+  ],
+  "603077.SH": [
+    {"productName": "维生素E", "commodityKey": "cj:price:VE"},
+    {"productName": "香精香料", "commodityKey": "cj:price:薄荷醇"},
+    {"productName": "新材料", "commodityKey": "cj:price:PPS"}
+  ],
+  "603599.SH": [
+    {"productName": "多菌灵", "commodityKey": "cj:price:多菌灵"},
+    {"productName": "甲基硫菌灵", "commodityKey": "cj:price:甲基硫菌灵"},
+    {"productName": "敌草隆", "commodityKey": "cj:price:敌草隆"}
+  ],
+  "603968.SH": [
+    {"productName": "热力", "commodityKey": "cj:price:动力煤"},
+    {"productName": "天然气", "commodityKey": "cj:price:LNG"},
+    {"productName": "生物质", "commodityKey": "cj:price:木屑颗粒"}
+  ],
+  "605399.SH": [
+    {"productName": "硅烷偶联剂", "commodityKey": "cj:price:KH-550"},
+    {"productName": "气相白炭黑", "commodityKey": "cj:price:气相白炭黑"},
+    {"productName": "功能性硅橡胶", "commodityKey": "cj:price:107胶"}
+  ],
+  "688778.SH": [
+    {"productName": "钴酸锂", "commodityKey": "cj:price:钴酸锂"},
+    {"productName": "三元材料", "commodityKey": "cj:price:NCM811"},
+    {"productName": "磷酸铁锂", "commodityKey": "cj:price:磷酸铁锂"}
+  ],
+  "000629.SZ": [
+    {"productName": "钒制品", "commodityKey": "cj:price:五氧化二钒"},
+    {"productName": "钛白粉", "commodityKey": "cj:price:钛白粉(金红石)"},
+    {"productName": "钛精矿", "commodityKey": "cj:price:钛精矿"}
+  ],
+  "000657.SZ": [
+    {"productName": "钨", "commodityKey": "cj:price:仲钨酸铵"},
+    {"productName": "硬质合金", "commodityKey": "cj:price:碳化钨"},
+    {"productName": "钼", "commodityKey": "cj:price:钼精矿"}
+  ],
+  "000878.SZ": [
+    {"productName": "铜", "commodityKey": "lme:price:铜"},
+    {"productName": "黄金", "commodityKey": "lme:price:黄金"},
+    {"productName": "白银", "commodityKey": "lme:price:白银"}
+  ],
+  "000923.SZ": [
+    {"productName": "铁矿石", "commodityKey": "lme:price:铁矿石"},
+    {"productName": "钒钛", "commodityKey": "cj:price:五氧化二钒"},
+    {"productName": "磁铁矿", "commodityKey": "cj:price:铁精粉"}
+  ],
+  "000960.SZ": [
+    {"productName": "锡", "commodityKey": "lme:price:锡"},
+    {"productName": "锌", "commodityKey": "lme:price:锌"},
+    {"productName": "铟", "commodityKey": "cj:price:金属铟"}
+  ],
+  "000962.SZ": [
+    {"productName": "钽", "commodityKey": "lme:price:钽"},
+    {"productName": "铌", "commodityKey": "lme:price:铌"},
+    {"productName": "铍", "commodityKey": "cj:price:金属铍"}
+  ],
+  "002057.SZ": [
+    {"productName": "四氧化三锰", "commodityKey": "cj:price:四氧化三锰"},
+    {"productName": "稀土", "commodityKey": "cj:price:氧化镨钕"},
+    {"productName": "永磁材料", "commodityKey": "cj:price:N35钕铁硼"}
+  ],
+  "002096.SZ": [
+    {"productName": "工业炸药", "commodityKey": "cj:price:硝酸铵"},
+    {"productName": "雷管", "commodityKey": "cj:price:电子雷管"},
+    {"productName": "爆破服务", "commodityKey": "cj:price:工业炸药"}
+  ],
+  "002226.SZ": [
+    {"productName": "工业炸药", "commodityKey": "cj:price:硝酸铵"},
+    {"productName": "雷管", "commodityKey": "cj:price:电子雷管"},
+    {"productName": "风电", "commodityKey": "cj:price:风电机组"}
+  ],
+  "002237.SZ": [
+    {"productName": "黄金", "commodityKey": "lme:price:黄金"},
+    {"productName": "白银", "commodityKey": "lme:price:白银"},
+    {"productName": "电解铜", "commodityKey": "lme:price:铜"}
+  ],
+  "002408.SZ": [
+    {"productName": "甲乙酮", "commodityKey": "cj:price:丁酮（华东）"},
+    {"productName": "顺酐", "commodityKey": "cj:price:顺酐"},
+    {"productName": "丁二烯", "commodityKey": "cj:price:丁二烯（上海石化）"}
+  ],
+  "002469.SZ": [
+    {"productName": "草甘膦", "commodityKey": "cj:price:草甘膦"},
+    {"productName": "敌草快", "commodityKey": "cj:price:敌草快"},
+    {"productName": "有机硅", "commodityKey": "cj:price:DMC"}
+  ],
+  "002493.SZ": [
+    {"productName": "PTA", "commodityKey": "cj:price:PTA（华东）"},
+    {"productName": "聚酯", "commodityKey": "cj:price:涤纶POY（华东）"},
+    {"productName": "PX", "commodityKey": "cj:price:对二甲苯（PX）"}
+  ],
+  "002597.SZ": [
+    {"productName": "甜味剂", "commodityKey": "cj:price:安赛蜜"},
+    {"productName": "三氯蔗糖", "commodityKey": "cj:price:三氯蔗糖"},
+    {"productName": "甲乙基麦芽酚", "commodityKey": "cj:price:乙基麦芽酚"}
+  ],
+  "002637.SZ": [
+    {"productName": "表面活性剂", "commodityKey": "cj:price:AES"},
+    {"productName": "油脂化工", "commodityKey": "cj:price:硬脂酸"},
+    {"productName": "磺酸", "commodityKey": "cj:price:磺酸"}
+  ],
+  "002648.SZ": [
+    {"productName": "丙烯酸", "commodityKey": "cj:price:丙烯酸"},
+    {"productName": "丙烯酸酯", "commodityKey": "cj:price:丙烯酸丁酯"},
+    {"productName": "C3产品", "commodityKey": "cj:price:丙烯（汇丰石化）"}
+  ],
+  "002748.SZ": [
+    {"productName": "烧碱", "commodityKey": "cj:price:32%隔膜烧碱（华东）"},
+    {"productName": "液氯", "commodityKey": "cj:price:液氯（华东）"},
+    {"productName": "双氧水", "commodityKey": "cj:price:双氧水"}
+  ],
+  "002783.SZ": [
+    {"productName": "工业炸药", "commodityKey": "cj:price:硝酸铵"},
+    {"productName": "硝酸铵", "commodityKey": "cj:price:硝酸铵"},
+    {"productName": "复合肥", "commodityKey": "cj:price:复合肥"}
+  ],
+  "300758.SZ": [
+    {"productName": "有机颜料", "commodityKey": "cj:price:永固紫"},
+    {"productName": "高性能材料", "commodityKey": "cj:price:聚氨酯"},
+    {"productName": "中间体", "commodityKey": "cj:price:色酚"}
+  ],
+  "300927.SZ": [
+    {"productName": "甲醛", "commodityKey": "cj:price:甲醛（长三角）"},
+    {"productName": "多聚甲醛", "commodityKey": "cj:price:多聚甲醛"},
+    {"productName": "氯化物", "commodityKey": "cj:price:三氯甲醛"}
+  ],
+  "600298.SH": [
+    {"productName": "蛋氨酸", "commodityKey": "cj:price:蛋氨酸"},
+    {"productName": "维生素A", "commodityKey": "cj:price:VA"},
+    {"productName": "维生素E", "commodityKey": "cj:price:VE"}
+  ],
+  "600328.SH": [
+    {"productName": "纯碱", "commodityKey": "cj:price:轻质纯碱（华东）"},
+    {"productName": "烧碱", "commodityKey": "cj:price:32%隔膜烧碱（华东）"},
+    {"productName": "PVC", "commodityKey": "cj:price:PVC（华东电石法）"}
+  ],
+  "600378.SH": [
+    {"productName": "制冷剂", "commodityKey": "cj:price:R32"},
+    {"productName": "含氟聚合物", "commodityKey": "cj:price:PTFE"},
+    {"productName": "电子特气", "commodityKey": "cj:price:六氟化钨"}
+  ],
+  "600409.SH": [
+    {"productName": "纯碱", "commodityKey": "cj:price:轻质纯碱（华东）"},
+    {"productName": "粘胶短纤", "commodityKey": "cj:price:粘胶短纤（华东）"},
+    {"productName": "PVC", "commodityKey": "cj:price:PVC（华东电石法）"}
+  ],
+  "600486.SH": [
+    {"productName": "草甘膦", "commodityKey": "cj:price:草甘膦"},
+    {"productName": "菊酯", "commodityKey": "cj:price:高效氯氟氰菊酯"},
+    {"productName": "杀菌剂", "commodityKey": "cj:price:多菌灵"}
+  ],
+  "603227.SH": [
+    {"productName": "工业炸药", "commodityKey": "cj:price:硝酸铵"},
+    {"productName": "硝酸铵", "commodityKey": "cj:price:硝酸铵"},
+    {"productName": "爆破服务", "commodityKey": "cj:price:工业炸药"}
+  ],
+  "603977.SH": [
+    {"productName": "工业炸药", "commodityKey": "cj:price:硝酸铵"},
+    {"productName": "电子雷管", "commodityKey": "cj:price:电子雷管"},
+    {"productName": "高氯酸钾", "commodityKey": "cj:price:高氯酸钾"}
+  ]
+}
