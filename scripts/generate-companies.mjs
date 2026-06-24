@@ -20,6 +20,11 @@ const manualMapping = JSON.parse(
   readFileSync(join(OUTPUT_PATH, "../../scripts/company-manual-mapping.json"), "utf-8")
 );
 
+// 读取收入权重
+const revenueWeights = JSON.parse(
+  readFileSync(join(OUTPUT_PATH, "../../scripts/company-revenue-weights.json"), "utf-8")
+);
+
 // 手动定义公司分组（从 company-groups.ts 提取）
 const companyGroups = {
   chemical: ['002408.SZ', '600500.SH', '600486.SH', '600378.SH', '600409.SH', '600328.SH', '000819.SZ', '002136.SZ', '600866.SH', '600298.SH', '000554.SZ', '000830.SZ', '600028.SH', '002597.SZ', '002637.SZ', '603599.SH', '600352.SH', '601117.SH', '002493.SZ', '601233.SH', '603077.SH', '600746.SH', '000731.SZ', '300758.SZ', '000990.SZ', '002648.SZ', '600955.SH', '603968.SH', '002469.SZ', '300927.SZ', '601678.SH', '601216.SH', '002092.SZ', '002748.SZ', '605399.SH', '600499.SH', '000792.SZ', '601857.SH', '601118.SH', '002100.SZ', '600299.SH', '600230.SH', '002258.SZ', '600160.SH', '600426.SH', '000930.SZ'],
@@ -204,9 +209,12 @@ for (const research of legacyResearch.research) {
 
   // 优先使用手动映射
   if (manualMapping[code]) {
-    const products = manualMapping[code].map((p) => ({
+    const mapping = manualMapping[code];
+    // 使用收入权重（如果有的话）
+    const weightData = revenueWeights[code];
+    const products = mapping.map((p, index) => ({
       ...p,
-      weight: 1 / manualMapping[code].length,
+      weight: weightData?.weights?.[index] ?? (1 / mapping.length),
     }));
     companies.push({ code, name: research.name, group, products });
     continue;
