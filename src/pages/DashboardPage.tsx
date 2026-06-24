@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { AppData, DivergenceSignal, WeightType } from "../types";
-import SignalTable from "../components/SignalTable";
+import GroupedSignalTable from "../components/GroupedSignalTable";
 import CorrelationHeatmap from "../components/CorrelationHeatmap";
 import CompanyListTable from "../components/CompanyListTable";
 
@@ -72,7 +72,11 @@ export default function DashboardPage({ data }: DashboardPageProps) {
 
       <div className="tab-content">
         {activeTab === "signals" && (
-          <SignalTable signals={data.signals} onSelectSignal={handleSelectSignal} />
+          <GroupedSignalTable
+            signals={data.signals}
+            valuationData={data.valuationData}
+            onSelectSignal={handleSelectSignal}
+          />
         )}
         {activeTab === "all" && (
           <CompanyListTable

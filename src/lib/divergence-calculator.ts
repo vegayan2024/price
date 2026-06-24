@@ -113,7 +113,7 @@ export function detectDivergence(
 
     // 背离条件：相关性较低且方向相反
     const divergenceThreshold = 0.3;
-    const returnThreshold = 0.05;
+    const returnThreshold = 0.10;
 
     if (
       Math.abs(correlation) < divergenceThreshold &&
@@ -136,7 +136,7 @@ export function detectDivergence(
         commodityChange: commodityCumReturn,
         startDate: dates[i - windowSize] ?? "",
         endDate: dates[i] ?? "",
-        signalStrength: divergenceScore > 0.2 ? "strong" : divergenceScore > 0.1 ? "medium" : "weak",
+        signalStrength: divergenceScore > 0.3 ? "strong" : divergenceScore > 0.2 ? "medium" : "weak",
       });
     }
   }

@@ -1,4 +1,4 @@
-import type { AppData, Company, DivergenceSignal, CorrelationData, PricePoint } from "../types";
+import type { AppData, Company, DivergenceSignal, CorrelationData, PricePoint, ValuationData } from "../types";
 import { calculateCorrelation, calculateReturns, calculateSlidingCorrelation } from "./divergence-calculator";
 
 interface FetchOptions {
@@ -199,10 +199,11 @@ function calculateCompanyCorrelation(
 }
 
 export async function loadAppData(options: FetchOptions = {}): Promise<AppData> {
-  const [companies, commodityPrices, stockPrices] = await Promise.all([
+  const [companies, commodityPrices, stockPrices, valuationData] = await Promise.all([
     fetchOptionalJson<Company[]>("companies.json", [], options),
     fetchOptionalJson<Record<string, PricePoint[]>>("commodity-prices.json", {}, options),
     fetchOptionalJson<Record<string, PricePoint[]>>("stock-prices.json", {}, options),
+    fetchOptionalJson<Record<string, ValuationData>>("valuation-data.json", {}, options),
   ]);
 
   const allSignals: DivergenceSignal[] = [];
@@ -230,5 +231,6 @@ export async function loadAppData(options: FetchOptions = {}): Promise<AppData> 
     correlations: allCorrelations,
     commodityPrices,
     stockPrices,
+    valuationData,
   };
 }

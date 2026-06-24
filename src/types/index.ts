@@ -52,6 +52,18 @@ export interface CorrelationData {
   lastUpdated: string;
 }
 
+/** 估值数据 */
+export interface ValuationData {
+  code: string;
+  name: string;
+  close: number | null;
+  pb: number | null;
+  pe: number | null;
+  pbPercentile: number | null;
+  pePercentile: number | null;
+  priceHistory: number[];
+}
+
 /** 应用数据 */
 export interface AppData {
   companies: Company[];
@@ -59,6 +71,7 @@ export interface AppData {
   correlations: CorrelationData[];
   commodityPrices: Record<string, PricePoint[]>;
   stockPrices: Record<string, PricePoint[]>;
+  valuationData: Record<string, ValuationData>;
 }
 
 /** 主题模式 */
