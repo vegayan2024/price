@@ -3,7 +3,7 @@
     "code": "000554.SZ",
     "name": "泰山石油",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "汽油",
         "commodityKey": "cj:price:92#汽油",
@@ -19,13 +19,30 @@
         "commodityKey": "cj:price:液化气",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "汽油",
+        "commodityKey": "cj:price:92#汽油",
+        "weight": 0.4
+      },
+      {
+        "productName": "柴油",
+        "commodityKey": "cj:price:0#柴油",
+        "weight": 0.35
+      },
+      {
+        "productName": "液化气",
+        "commodityKey": "cj:price:液化气",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "000731.SZ",
     "name": "四川美丰",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "尿素",
         "commodityKey": "cj:price:尿素(华东)",
@@ -41,13 +58,30 @@
         "commodityKey": "cj:price:三聚氰胺",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "尿素",
+        "commodityKey": "cj:price:尿素(华东)",
+        "weight": 0.4
+      },
+      {
+        "productName": "复合肥",
+        "commodityKey": "cj:price:复合肥",
+        "weight": 0.35
+      },
+      {
+        "productName": "三聚氰胺",
+        "commodityKey": "cj:price:三聚氰胺",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "000792.SZ",
     "name": "盐湖股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "氯化钾",
         "commodityKey": "cj:price:氯化钾",
@@ -63,13 +97,30 @@
         "commodityKey": "cj:price:轻质纯碱（华东）",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "氯化钾",
+        "commodityKey": "cj:price:氯化钾",
+        "weight": 0.45
+      },
+      {
+        "productName": "碳酸锂",
+        "commodityKey": "cj:price:碳酸锂",
+        "weight": 0.4
+      },
+      {
+        "productName": "纯碱",
+        "commodityKey": "cj:price:轻质纯碱（华东）",
+        "weight": 0.1
+      }
     ]
   },
   {
     "code": "000819.SZ",
     "name": "岳阳兴长",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "聚丙烯",
         "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
@@ -85,13 +136,44 @@
         "commodityKey": "cj:price:液化气",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "聚丙烯",
+        "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
+        "weight": 0.3
+      },
+      {
+        "productName": "MTBE",
+        "commodityKey": "cj:price:MTBE",
+        "weight": 0.3
+      },
+      {
+        "productName": "液化气",
+        "commodityKey": "cj:price:液化气",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "000830.SZ",
     "name": "鲁西化工",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
+      {
+        "productName": "尿素",
+        "commodityKey": "cj:price:尿素（华鲁恒升小颗粒）",
+        "commodityName": "尿素（华鲁恒升小颗粒）",
+        "weight": 0.5
+      },
+      {
+        "productName": "复合肥",
+        "commodityKey": "xyzq:price:复合肥(45%CL,湖北)",
+        "commodityName": "复合肥(45%CL,湖北)",
+        "weight": 0.5
+      }
+    ],
+    "productsByProfit": [
       {
         "productName": "尿素",
         "commodityKey": "cj:price:尿素（华鲁恒升小颗粒）",
@@ -110,7 +192,7 @@
     "code": "000930.SZ",
     "name": "中粮科技",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "淀粉糖",
         "commodityKey": "cj:price:葡萄糖",
@@ -126,13 +208,30 @@
         "commodityKey": "cj:price:赖氨酸",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "淀粉糖",
+        "commodityKey": "cj:price:葡萄糖",
+        "weight": 0.4
+      },
+      {
+        "productName": "味精",
+        "commodityKey": "cj:price:味精",
+        "weight": 0.35
+      },
+      {
+        "productName": "氨基酸",
+        "commodityKey": "cj:price:赖氨酸",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "000990.SZ",
     "name": "诚志股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "甲醇",
         "commodityKey": "cj:price:甲醇（长三角）",
@@ -148,13 +247,30 @@
         "commodityKey": "cj:price:LNG",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "甲醇",
+        "commodityKey": "cj:price:甲醇（长三角）",
+        "weight": 0.3
+      },
+      {
+        "productName": "聚烯烃",
+        "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
+        "weight": 0.35
+      },
+      {
+        "productName": "清洁能源",
+        "commodityKey": "cj:price:LNG",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "002092.SZ",
     "name": "中泰化学",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "PVC",
         "commodityKey": "cj:price:PVC（华东电石法）",
@@ -170,13 +286,30 @@
         "commodityKey": "cj:price:粘胶短纤（华东）",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "PVC",
+        "commodityKey": "cj:price:PVC（华东电石法）",
+        "weight": 0.4
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.35
+      },
+      {
+        "productName": "粘胶短纤",
+        "commodityKey": "cj:price:粘胶短纤（华东）",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "002100.SZ",
     "name": "天康生物",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "饲料",
         "commodityKey": "cj:price:豆粕",
@@ -192,13 +325,50 @@
         "commodityKey": "cj:price:VE",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "饲料",
+        "commodityKey": "cj:price:豆粕",
+        "weight": 0.4
+      },
+      {
+        "productName": "生猪",
+        "commodityKey": "cj:price:生猪",
+        "weight": 0.4
+      },
+      {
+        "productName": "兽药",
+        "commodityKey": "cj:price:VE",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "002136.SZ",
     "name": "安纳达",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
+      {
+        "productName": "钛白粉",
+        "commodityKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）",
+        "commodityName": "钛白粉（锐钛型，攀钢钒钛）",
+        "weight": 0.33
+      },
+      {
+        "productName": "磷酸铁的生产",
+        "commodityKey": "xyzq:price:磷酸铁",
+        "commodityName": "磷酸铁",
+        "weight": 0.33
+      },
+      {
+        "productName": "销售",
+        "commodityKey": "unknown:销售",
+        "commodityName": "销售",
+        "weight": 0.33
+      }
+    ],
+    "productsByProfit": [
       {
         "productName": "钛白粉",
         "commodityKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）",
@@ -223,7 +393,24 @@
     "code": "002258.SZ",
     "name": "利尔化学",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
+      {
+        "productName": "草铵膦",
+        "commodityKey": "cj:price:草铵膦",
+        "weight": 0.5
+      },
+      {
+        "productName": "氯氟吡氧乙酸",
+        "commodityKey": "cj:price:使它隆",
+        "weight": 0.3
+      },
+      {
+        "productName": "毒莠定",
+        "commodityKey": "cj:price:毒莠定",
+        "weight": 0.15
+      }
+    ],
+    "productsByProfit": [
       {
         "productName": "草铵膦",
         "commodityKey": "cj:price:草铵膦",
@@ -245,7 +432,7 @@
     "code": "002408.SZ",
     "name": "齐翔腾达",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "甲乙酮",
         "commodityKey": "cj:price:丁酮（华东）",
@@ -261,13 +448,30 @@
         "commodityKey": "cj:price:丁二烯（上海石化）",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "甲乙酮",
+        "commodityKey": "cj:price:丁酮（华东）",
+        "weight": 0.3
+      },
+      {
+        "productName": "顺酐",
+        "commodityKey": "cj:price:顺酐",
+        "weight": 0.4
+      },
+      {
+        "productName": "丁二烯",
+        "commodityKey": "cj:price:丁二烯（上海石化）",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "002469.SZ",
     "name": "三维化学",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "草甘膦",
         "commodityKey": "cj:price:草甘膦",
@@ -283,13 +487,30 @@
         "commodityKey": "cj:price:DMC",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "草甘膦",
+        "commodityKey": "cj:price:草甘膦",
+        "weight": 0.45
+      },
+      {
+        "productName": "敌草快",
+        "commodityKey": "cj:price:敌草快",
+        "weight": 0.25
+      },
+      {
+        "productName": "有机硅",
+        "commodityKey": "cj:price:DMC",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "002493.SZ",
     "name": "荣盛石化",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "PTA",
         "commodityKey": "cj:price:PTA（华东）",
@@ -305,13 +526,30 @@
         "commodityKey": "cj:price:对二甲苯（PX）",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "PTA",
+        "commodityKey": "cj:price:PTA（华东）",
+        "weight": 0.3
+      },
+      {
+        "productName": "聚酯",
+        "commodityKey": "cj:price:涤纶POY（华东）",
+        "weight": 0.4
+      },
+      {
+        "productName": "PX",
+        "commodityKey": "cj:price:对二甲苯（PX）",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "002597.SZ",
     "name": "金禾实业",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "甜味剂",
         "commodityKey": "cj:price:安赛蜜",
@@ -327,13 +565,30 @@
         "commodityKey": "cj:price:乙基麦芽酚",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "甜味剂",
+        "commodityKey": "cj:price:安赛蜜",
+        "weight": 0.35
+      },
+      {
+        "productName": "三氯蔗糖",
+        "commodityKey": "cj:price:三氯蔗糖",
+        "weight": 0.4
+      },
+      {
+        "productName": "甲乙基麦芽酚",
+        "commodityKey": "cj:price:乙基麦芽酚",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "002637.SZ",
     "name": "赞宇科技",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "表面活性剂",
         "commodityKey": "cj:price:AES",
@@ -349,13 +604,30 @@
         "commodityKey": "cj:price:磺酸",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "表面活性剂",
+        "commodityKey": "cj:price:AES",
+        "weight": 0.4
+      },
+      {
+        "productName": "油脂化工",
+        "commodityKey": "cj:price:硬脂酸",
+        "weight": 0.35
+      },
+      {
+        "productName": "磺酸",
+        "commodityKey": "cj:price:磺酸",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "002648.SZ",
     "name": "卫星化学",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "丙烯酸",
         "commodityKey": "cj:price:丙烯酸",
@@ -371,13 +643,30 @@
         "commodityKey": "cj:price:丙烯（汇丰石化）",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "丙烯酸",
+        "commodityKey": "cj:price:丙烯酸",
+        "weight": 0.4
+      },
+      {
+        "productName": "丙烯酸酯",
+        "commodityKey": "cj:price:丙烯酸丁酯",
+        "weight": 0.35
+      },
+      {
+        "productName": "C3产品",
+        "commodityKey": "cj:price:丙烯（汇丰石化）",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "002748.SZ",
     "name": "世龙实业",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "烧碱",
         "commodityKey": "cj:price:32%隔膜烧碱（华东）",
@@ -393,13 +682,30 @@
         "commodityKey": "cj:price:双氧水",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.45
+      },
+      {
+        "productName": "液氯",
+        "commodityKey": "cj:price:液氯（华东）",
+        "weight": 0.25
+      },
+      {
+        "productName": "双氧水",
+        "commodityKey": "cj:price:双氧水",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "300758.SZ",
     "name": "七彩化学",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "有机颜料",
         "commodityKey": "cj:price:永固紫",
@@ -415,13 +721,30 @@
         "commodityKey": "cj:price:色酚",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "有机颜料",
+        "commodityKey": "cj:price:永固紫",
+        "weight": 0.4
+      },
+      {
+        "productName": "高性能材料",
+        "commodityKey": "cj:price:聚氨酯",
+        "weight": 0.35
+      },
+      {
+        "productName": "中间体",
+        "commodityKey": "cj:price:色酚",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "300927.SZ",
     "name": "江天化学",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "甲醛",
         "commodityKey": "cj:price:甲醛（长三角）",
@@ -437,13 +760,30 @@
         "commodityKey": "cj:price:三氯甲醛",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "甲醛",
+        "commodityKey": "cj:price:甲醛（长三角）",
+        "weight": 0.4
+      },
+      {
+        "productName": "多聚甲醛",
+        "commodityKey": "cj:price:多聚甲醛",
+        "weight": 0.35
+      },
+      {
+        "productName": "氯化物",
+        "commodityKey": "cj:price:三氯甲醛",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "600028.SH",
     "name": "中国石化",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "原油",
         "commodityKey": "lme:price:WTI原油",
@@ -459,13 +799,30 @@
         "commodityKey": "cj:price:0#柴油",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "原油",
+        "commodityKey": "lme:price:WTI原油",
+        "weight": 0.35
+      },
+      {
+        "productName": "汽油",
+        "commodityKey": "cj:price:92#汽油",
+        "weight": 0.35
+      },
+      {
+        "productName": "柴油",
+        "commodityKey": "cj:price:0#柴油",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "600160.SH",
     "name": "巨化股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "制冷剂",
         "commodityKey": "cj:price:R32",
@@ -481,13 +838,30 @@
         "commodityKey": "cj:price:32%隔膜烧碱（华东）",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "制冷剂",
+        "commodityKey": "cj:price:R32",
+        "weight": 0.4
+      },
+      {
+        "productName": "含氟聚合物",
+        "commodityKey": "cj:price:PVDF",
+        "weight": 0.4
+      },
+      {
+        "productName": "基础化工",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "600230.SH",
     "name": "沧州大化",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "TDI",
         "commodityKey": "cj:price:TDI（华东）",
@@ -503,13 +877,30 @@
         "commodityKey": "cj:price:32%隔膜烧碱（华东）",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "TDI",
+        "commodityKey": "cj:price:TDI（华东）",
+        "weight": 0.55
+      },
+      {
+        "productName": "聚碳酸酯",
+        "commodityKey": "cj:price:PC",
+        "weight": 0.3
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.1
+      }
     ]
   },
   {
     "code": "600298.SH",
     "name": "安琪酵母",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "蛋氨酸",
         "commodityKey": "cj:price:蛋氨酸",
@@ -519,6 +910,23 @@
         "productName": "维生素A",
         "commodityKey": "cj:price:VA",
         "weight": 0.25
+      },
+      {
+        "productName": "维生素E",
+        "commodityKey": "cj:price:VE",
+        "weight": 0.15
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "蛋氨酸",
+        "commodityKey": "cj:price:蛋氨酸",
+        "weight": 0.5
+      },
+      {
+        "productName": "维生素A",
+        "commodityKey": "cj:price:VA",
+        "weight": 0.3
       },
       {
         "productName": "维生素E",
@@ -531,7 +939,7 @@
     "code": "600299.SH",
     "name": "安迪苏",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "蛋氨酸",
         "commodityKey": "cj:price:蛋氨酸",
@@ -547,13 +955,30 @@
         "commodityKey": "cj:price:VE",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "蛋氨酸",
+        "commodityKey": "cj:price:蛋氨酸",
+        "weight": 0.5
+      },
+      {
+        "productName": "维生素A",
+        "commodityKey": "cj:price:VA",
+        "weight": 0.3
+      },
+      {
+        "productName": "维生素E",
+        "commodityKey": "cj:price:VE",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "600328.SH",
     "name": "中盐化工",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "纯碱",
         "commodityKey": "cj:price:轻质纯碱（华东）",
@@ -569,13 +994,30 @@
         "commodityKey": "cj:price:PVC（华东电石法）",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "cj:price:轻质纯碱（华东）",
+        "weight": 0.55
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.25
+      },
+      {
+        "productName": "PVC",
+        "commodityKey": "cj:price:PVC（华东电石法）",
+        "weight": 0.1
+      }
     ]
   },
   {
     "code": "600352.SH",
     "name": "浙江龙盛",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "染料",
         "commodityKey": "cj:price:分散染料",
@@ -591,13 +1033,30 @@
         "commodityKey": "cj:price:间苯二胺",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "染料",
+        "commodityKey": "cj:price:分散染料",
+        "weight": 0.35
+      },
+      {
+        "productName": "助剂",
+        "commodityKey": "cj:price:还原剂",
+        "weight": 0.35
+      },
+      {
+        "productName": "中间体",
+        "commodityKey": "cj:price:间苯二胺",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "600378.SH",
     "name": "昊华科技",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "制冷剂",
         "commodityKey": "cj:price:R32",
@@ -613,13 +1072,30 @@
         "commodityKey": "cj:price:六氟化钨",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "制冷剂",
+        "commodityKey": "cj:price:R32",
+        "weight": 0.35
+      },
+      {
+        "productName": "含氟聚合物",
+        "commodityKey": "cj:price:PTFE",
+        "weight": 0.4
+      },
+      {
+        "productName": "电子特气",
+        "commodityKey": "cj:price:六氟化钨",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "600409.SH",
     "name": "三友化工",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "纯碱",
         "commodityKey": "cj:price:轻质纯碱（华东）",
@@ -635,13 +1111,30 @@
         "commodityKey": "cj:price:PVC（华东电石法）",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "cj:price:轻质纯碱（华东）",
+        "weight": 0.5
+      },
+      {
+        "productName": "粘胶短纤",
+        "commodityKey": "cj:price:粘胶短纤（华东）",
+        "weight": 0.2
+      },
+      {
+        "productName": "PVC",
+        "commodityKey": "cj:price:PVC（华东电石法）",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "600426.SH",
     "name": "华鲁恒升",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "醋酸",
         "commodityKey": "cj:price:醋酸（华东）",
@@ -657,13 +1150,30 @@
         "commodityKey": "cj:price:己二酸（华东）",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "醋酸",
+        "commodityKey": "cj:price:醋酸（华东）",
+        "weight": 0.35
+      },
+      {
+        "productName": "DMF",
+        "commodityKey": "cj:price:DMF（华东）",
+        "weight": 0.35
+      },
+      {
+        "productName": "己二酸",
+        "commodityKey": "cj:price:己二酸（华东）",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "600486.SH",
     "name": "扬农化工",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "草甘膦",
         "commodityKey": "cj:price:草甘膦",
@@ -679,13 +1189,30 @@
         "commodityKey": "cj:price:多菌灵",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "草甘膦",
+        "commodityKey": "cj:price:草甘膦",
+        "weight": 0.4
+      },
+      {
+        "productName": "菊酯",
+        "commodityKey": "cj:price:高效氯氟氰菊酯",
+        "weight": 0.35
+      },
+      {
+        "productName": "杀菌剂",
+        "commodityKey": "cj:price:多菌灵",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "600499.SH",
     "name": "科达制造",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "电解铜箔",
         "commodityKey": "lme:price:铜",
@@ -701,13 +1228,30 @@
         "commodityKey": "cj:price:聚烯烃",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "电解铜箔",
+        "commodityKey": "lme:price:铜",
+        "weight": 0.55
+      },
+      {
+        "productName": "电线电缆",
+        "commodityKey": "cj:price:铜杆",
+        "weight": 0.25
+      },
+      {
+        "productName": "高分子材料",
+        "commodityKey": "cj:price:聚烯烃",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "600500.SH",
     "name": "中化国际",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "环氧树脂",
         "commodityKey": "cj:price:环氧树脂",
@@ -723,17 +1267,51 @@
         "commodityKey": "cj:price:PA66",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "环氧树脂",
+        "commodityKey": "cj:price:环氧树脂",
+        "weight": 0.25
+      },
+      {
+        "productName": "橡胶助剂",
+        "commodityKey": "cj:price:防老剂",
+        "weight": 0.35
+      },
+      {
+        "productName": "工程塑料",
+        "commodityKey": "cj:price:PA66",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "600746.SH",
     "name": "江苏索普",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "醋酸",
         "commodityKey": "cj:price:醋酸（华东）",
         "weight": 0.5
+      },
+      {
+        "productName": "氯碱",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.25
+      },
+      {
+        "productName": "硫酸",
+        "commodityKey": "cj:price:硫酸",
+        "weight": 0.15
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "醋酸",
+        "commodityKey": "cj:price:醋酸（华东）",
+        "weight": 0.55
       },
       {
         "productName": "氯碱",
@@ -751,7 +1329,7 @@
     "code": "600866.SH",
     "name": "星湖科技",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "味精",
         "commodityKey": "cj:price:味精",
@@ -767,13 +1345,30 @@
         "commodityKey": "cj:price:肌苷",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "味精",
+        "commodityKey": "cj:price:味精",
+        "weight": 0.4
+      },
+      {
+        "productName": "核苷酸",
+        "commodityKey": "cj:price:I+G",
+        "weight": 0.4
+      },
+      {
+        "productName": "原料药",
+        "commodityKey": "cj:price:肌苷",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "600955.SH",
     "name": "维远股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "苯酚",
         "commodityKey": "cj:price:苯酚(华东)",
@@ -789,13 +1384,30 @@
         "commodityKey": "cj:price:双酚A",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "苯酚",
+        "commodityKey": "cj:price:苯酚(华东)",
+        "weight": 0.35
+      },
+      {
+        "productName": "丙酮",
+        "commodityKey": "cj:price:丙酮(华东)",
+        "weight": 0.3
+      },
+      {
+        "productName": "双酚A",
+        "commodityKey": "cj:price:双酚A",
+        "weight": 0.3
+      }
     ]
   },
   {
     "code": "601117.SH",
     "name": "中国化学",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "工程服务",
         "commodityKey": "cj:price:MDI",
@@ -811,13 +1423,30 @@
         "commodityKey": "cj:price:32%隔膜烧碱（华东）",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工程服务",
+        "commodityKey": "cj:price:MDI",
+        "weight": 0.55
+      },
+      {
+        "productName": "化工品贸易",
+        "commodityKey": "cj:price:轻质纯碱（华东）",
+        "weight": 0.2
+      },
+      {
+        "productName": "设计咨询",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "601118.SH",
     "name": "海南橡胶",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "天然橡胶",
         "commodityKey": "cj:price:天然橡胶（上海地区）",
@@ -833,13 +1462,30 @@
         "commodityKey": "cj:price:浓缩乳胶",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "天然橡胶",
+        "commodityKey": "cj:price:天然橡胶（上海地区）",
+        "weight": 0.45
+      },
+      {
+        "productName": "轮胎",
+        "commodityKey": "cj:price:全钢胎",
+        "weight": 0.35
+      },
+      {
+        "productName": "乳胶",
+        "commodityKey": "cj:price:浓缩乳胶",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "601216.SH",
     "name": "君正集团",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "PVC",
         "commodityKey": "cj:price:PVC（华东电石法）",
@@ -855,13 +1501,30 @@
         "commodityKey": "cj:price:电石（华东）",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "PVC",
+        "commodityKey": "cj:price:PVC（华东电石法）",
+        "weight": 0.35
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.35
+      },
+      {
+        "productName": "电石",
+        "commodityKey": "cj:price:电石（华东）",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "601233.SH",
     "name": "桐昆股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "涤纶长丝",
         "commodityKey": "cj:price:涤纶POY（华东）",
@@ -877,13 +1540,30 @@
         "commodityKey": "cj:price:PET切片（华东）",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "涤纶长丝",
+        "commodityKey": "cj:price:涤纶POY（华东）",
+        "weight": 0.55
+      },
+      {
+        "productName": "PTA",
+        "commodityKey": "cj:price:PTA（华东）",
+        "weight": 0.25
+      },
+      {
+        "productName": "聚酯切片",
+        "commodityKey": "cj:price:PET切片（华东）",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "601678.SH",
     "name": "滨化股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "烧碱",
         "commodityKey": "cj:price:32%隔膜烧碱（华东）",
@@ -899,13 +1579,30 @@
         "commodityKey": "cj:price:三氯乙烯",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+        "weight": 0.35
+      },
+      {
+        "productName": "环氧丙烷",
+        "commodityKey": "cj:price:环氧丙烷（华东）",
+        "weight": 0.4
+      },
+      {
+        "productName": "三氯乙烯",
+        "commodityKey": "cj:price:三氯乙烯",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "601857.SH",
     "name": "中国石油",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "原油",
         "commodityKey": "lme:price:WTI原油",
@@ -921,13 +1618,30 @@
         "commodityKey": "cj:price:92#汽油",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "原油",
+        "commodityKey": "lme:price:WTI原油",
+        "weight": 0.35
+      },
+      {
+        "productName": "天然气",
+        "commodityKey": "cj:price:LNG",
+        "weight": 0.35
+      },
+      {
+        "productName": "成品油",
+        "commodityKey": "cj:price:92#汽油",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "603077.SH",
     "name": "和邦生物",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "维生素E",
         "commodityKey": "cj:price:VE",
@@ -943,13 +1657,30 @@
         "commodityKey": "cj:price:PPS",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "维生素E",
+        "commodityKey": "cj:price:VE",
+        "weight": 0.3
+      },
+      {
+        "productName": "香精香料",
+        "commodityKey": "cj:price:薄荷醇",
+        "weight": 0.35
+      },
+      {
+        "productName": "新材料",
+        "commodityKey": "cj:price:PPS",
+        "weight": 0.3
+      }
     ]
   },
   {
     "code": "603599.SH",
     "name": "广信股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "多菌灵",
         "commodityKey": "cj:price:多菌灵",
@@ -965,13 +1696,30 @@
         "commodityKey": "cj:price:敌草隆",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "多菌灵",
+        "commodityKey": "cj:price:多菌灵",
+        "weight": 0.4
+      },
+      {
+        "productName": "甲基硫菌灵",
+        "commodityKey": "cj:price:甲基硫菌灵",
+        "weight": 0.35
+      },
+      {
+        "productName": "敌草隆",
+        "commodityKey": "cj:price:敌草隆",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "603968.SH",
     "name": "醋化股份",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "热力",
         "commodityKey": "cj:price:动力煤",
@@ -987,13 +1735,30 @@
         "commodityKey": "cj:price:木屑颗粒",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "热力",
+        "commodityKey": "cj:price:动力煤",
+        "weight": 0.4
+      },
+      {
+        "productName": "天然气",
+        "commodityKey": "cj:price:LNG",
+        "weight": 0.4
+      },
+      {
+        "productName": "生物质",
+        "commodityKey": "cj:price:木屑颗粒",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "605399.SH",
     "name": "晨光新材",
     "group": "chemical",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "硅烷偶联剂",
         "commodityKey": "cj:price:KH-550",
@@ -1009,13 +1774,30 @@
         "commodityKey": "cj:price:107胶",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "硅烷偶联剂",
+        "commodityKey": "cj:price:KH-550",
+        "weight": 0.4
+      },
+      {
+        "productName": "气相白炭黑",
+        "commodityKey": "cj:price:气相白炭黑",
+        "weight": 0.35
+      },
+      {
+        "productName": "功能性硅橡胶",
+        "commodityKey": "cj:price:107胶",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "000629.SZ",
     "name": "钒钛股份",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "钒制品",
         "commodityKey": "cj:price:五氧化二钒",
@@ -1031,13 +1813,30 @@
         "commodityKey": "cj:price:钛精矿",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钒制品",
+        "commodityKey": "cj:price:五氧化二钒",
+        "weight": 0.5
+      },
+      {
+        "productName": "钛白粉",
+        "commodityKey": "cj:price:钛白粉(金红石)",
+        "weight": 0.3
+      },
+      {
+        "productName": "钛精矿",
+        "commodityKey": "cj:price:钛精矿",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "000657.SZ",
     "name": "中钨高新",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "钨",
         "commodityKey": "cj:price:仲钨酸铵",
@@ -1053,13 +1852,30 @@
         "commodityKey": "cj:price:钼精矿",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钨",
+        "commodityKey": "cj:price:仲钨酸铵",
+        "weight": 0.4
+      },
+      {
+        "productName": "硬质合金",
+        "commodityKey": "cj:price:碳化钨",
+        "weight": 0.4
+      },
+      {
+        "productName": "钼",
+        "commodityKey": "cj:price:钼精矿",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "000878.SZ",
     "name": "云南铜业",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "铜",
         "commodityKey": "lme:price:铜",
@@ -1075,13 +1891,30 @@
         "commodityKey": "lme:price:白银",
         "weight": 0.1
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "铜",
+        "commodityKey": "lme:price:铜",
+        "weight": 0.65
+      },
+      {
+        "productName": "黄金",
+        "commodityKey": "lme:price:黄金",
+        "weight": 0.2
+      },
+      {
+        "productName": "白银",
+        "commodityKey": "lme:price:白银",
+        "weight": 0.1
+      }
     ]
   },
   {
     "code": "000923.SZ",
     "name": "河钢资源",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "铁矿石",
         "commodityKey": "lme:price:铁矿石",
@@ -1097,13 +1930,30 @@
         "commodityKey": "cj:price:铁精粉",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "铁矿石",
+        "commodityKey": "lme:price:铁矿石",
+        "weight": 0.5
+      },
+      {
+        "productName": "钒钛",
+        "commodityKey": "cj:price:五氧化二钒",
+        "weight": 0.3
+      },
+      {
+        "productName": "磁铁矿",
+        "commodityKey": "cj:price:铁精粉",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "000960.SZ",
     "name": "锡业股份",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "锡",
         "commodityKey": "lme:price:锡",
@@ -1119,13 +1969,30 @@
         "commodityKey": "cj:price:金属铟",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "锡",
+        "commodityKey": "lme:price:锡",
+        "weight": 0.6
+      },
+      {
+        "productName": "锌",
+        "commodityKey": "lme:price:锌",
+        "weight": 0.2
+      },
+      {
+        "productName": "铟",
+        "commodityKey": "cj:price:金属铟",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "000962.SZ",
     "name": "东方钽业",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "钽",
         "commodityKey": "lme:price:钽",
@@ -1141,13 +2008,30 @@
         "commodityKey": "cj:price:金属铍",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钽",
+        "commodityKey": "lme:price:钽",
+        "weight": 0.5
+      },
+      {
+        "productName": "铌",
+        "commodityKey": "lme:price:铌",
+        "weight": 0.25
+      },
+      {
+        "productName": "铍",
+        "commodityKey": "cj:price:金属铍",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "002057.SZ",
     "name": "中钢天源",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "四氧化三锰",
         "commodityKey": "cj:price:四氧化三锰",
@@ -1163,13 +2047,30 @@
         "commodityKey": "cj:price:N35钕铁硼",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "四氧化三锰",
+        "commodityKey": "cj:price:四氧化三锰",
+        "weight": 0.35
+      },
+      {
+        "productName": "稀土",
+        "commodityKey": "cj:price:氧化镨钕",
+        "weight": 0.35
+      },
+      {
+        "productName": "永磁材料",
+        "commodityKey": "cj:price:N35钕铁硼",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "002237.SZ",
     "name": "恒邦股份",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "黄金",
         "commodityKey": "lme:price:黄金",
@@ -1185,13 +2086,30 @@
         "commodityKey": "lme:price:铜",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "黄金",
+        "commodityKey": "lme:price:黄金",
+        "weight": 0.55
+      },
+      {
+        "productName": "白银",
+        "commodityKey": "lme:price:白银",
+        "weight": 0.2
+      },
+      {
+        "productName": "电解铜",
+        "commodityKey": "lme:price:铜",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "600063.SH",
     "name": "皖维高新",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "PVA",
         "commodityKey": "cj:price:聚乙烯醇PVA",
@@ -1207,13 +2125,30 @@
         "commodityKey": "cj:price:P.O42.5水泥",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "PVA",
+        "commodityKey": "cj:price:聚乙烯醇PVA",
+        "weight": 0.5
+      },
+      {
+        "productName": "醋酸乙烯",
+        "commodityKey": "cj:price:醋酸乙烯（华东）",
+        "weight": 0.25
+      },
+      {
+        "productName": "水泥",
+        "commodityKey": "cj:price:P.O42.5水泥",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "600111.SH",
     "name": "北方稀土",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "稀土",
         "commodityKey": "cj:price:氧化镨钕",
@@ -1229,13 +2164,30 @@
         "commodityKey": "cj:price:氧化铈",
         "weight": 0.1
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "稀土",
+        "commodityKey": "cj:price:氧化镨钕",
+        "weight": 0.5
+      },
+      {
+        "productName": "稀土永磁",
+        "commodityKey": "cj:price:N35钕铁硼",
+        "weight": 0.35
+      },
+      {
+        "productName": "抛光粉",
+        "commodityKey": "cj:price:氧化铈",
+        "weight": 0.1
+      }
     ]
   },
   {
     "code": "600301.SH",
     "name": "华锡有色",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "锡",
         "commodityKey": "lme:price:锡",
@@ -1251,13 +2203,30 @@
         "commodityKey": "cj:price:锑锭",
         "weight": 0.15
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "锡",
+        "commodityKey": "lme:price:锡",
+        "weight": 0.55
+      },
+      {
+        "productName": "锌",
+        "commodityKey": "lme:price:锌",
+        "weight": 0.25
+      },
+      {
+        "productName": "锑",
+        "commodityKey": "cj:price:锑锭",
+        "weight": 0.15
+      }
     ]
   },
   {
     "code": "600392.SH",
     "name": "盛和资源",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "稀土",
         "commodityKey": "cj:price:氧化镨钕",
@@ -1273,13 +2242,30 @@
         "commodityKey": "cj:price:钛精矿",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "稀土",
+        "commodityKey": "cj:price:氧化镨钕",
+        "weight": 0.55
+      },
+      {
+        "productName": "锆",
+        "commodityKey": "cj:price:氧氯化锆",
+        "weight": 0.2
+      },
+      {
+        "productName": "钛",
+        "commodityKey": "cj:price:钛精矿",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "600459.SH",
     "name": "贵研铂业",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "铂",
         "commodityKey": "lme:price:铂",
@@ -1295,13 +2281,30 @@
         "commodityKey": "lme:price:铑",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "铂",
+        "commodityKey": "lme:price:铂",
+        "weight": 0.3
+      },
+      {
+        "productName": "钯",
+        "commodityKey": "lme:price:钯",
+        "weight": 0.3
+      },
+      {
+        "productName": "铑",
+        "commodityKey": "lme:price:铑",
+        "weight": 0.3
+      }
     ]
   },
   {
     "code": "600549.SH",
     "name": "厦门钨业",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "钨",
         "commodityKey": "cj:price:仲钨酸铵",
@@ -1317,13 +2320,30 @@
         "commodityKey": "lme:price:钴",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钨",
+        "commodityKey": "cj:price:仲钨酸铵",
+        "weight": 0.35
+      },
+      {
+        "productName": "稀土",
+        "commodityKey": "cj:price:氧化镨钕",
+        "weight": 0.35
+      },
+      {
+        "productName": "钴",
+        "commodityKey": "lme:price:钴",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "600961.SH",
     "name": "株冶集团",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "锌",
         "commodityKey": "lme:price:锌",
@@ -1339,13 +2359,30 @@
         "commodityKey": "lme:price:黄金",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "锌",
+        "commodityKey": "lme:price:锌",
+        "weight": 0.5
+      },
+      {
+        "productName": "铟",
+        "commodityKey": "cj:price:金属铟",
+        "weight": 0.25
+      },
+      {
+        "productName": "金银",
+        "commodityKey": "lme:price:黄金",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "601061.SH",
     "name": "中信金属",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "铌",
         "commodityKey": "lme:price:铌",
@@ -1361,13 +2398,30 @@
         "commodityKey": "lme:price:铁矿石",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "铌",
+        "commodityKey": "lme:price:铌",
+        "weight": 0.35
+      },
+      {
+        "productName": "铜",
+        "commodityKey": "lme:price:铜",
+        "weight": 0.35
+      },
+      {
+        "productName": "铁矿石",
+        "commodityKey": "lme:price:铁矿石",
+        "weight": 0.25
+      }
     ]
   },
   {
     "code": "601600.SH",
     "name": "中国铝业",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "氧化铝",
         "commodityKey": "lme:price:氧化铝",
@@ -1383,13 +2437,30 @@
         "commodityKey": "cj:price:金属镓",
         "weight": 0.1
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "氧化铝",
+        "commodityKey": "lme:price:氧化铝",
+        "weight": 0.45
+      },
+      {
+        "productName": "原铝",
+        "commodityKey": "lme:price:铝",
+        "weight": 0.4
+      },
+      {
+        "productName": "镓",
+        "commodityKey": "cj:price:金属镓",
+        "weight": 0.1
+      }
     ]
   },
   {
     "code": "688778.SH",
     "name": "厦钨新能",
     "group": "mining",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "钴酸锂",
         "commodityKey": "cj:price:钴酸锂",
@@ -1405,13 +2476,30 @@
         "commodityKey": "cj:price:磷酸铁锂",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钴酸锂",
+        "commodityKey": "cj:price:钴酸锂",
+        "weight": 0.35
+      },
+      {
+        "productName": "三元材料",
+        "commodityKey": "cj:price:NCM811",
+        "weight": 0.4
+      },
+      {
+        "productName": "磷酸铁锂",
+        "commodityKey": "cj:price:磷酸铁锂",
+        "weight": 0.2
+      }
     ]
   },
   {
     "code": "002096.SZ",
     "name": "易普力",
     "group": "explosive",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "工业炸药",
         "commodityKey": "cj:price:硝酸铵",
@@ -1427,13 +2515,30 @@
         "commodityKey": "cj:price:工业炸药",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "cj:price:硝酸铵",
+        "weight": 0.35
+      },
+      {
+        "productName": "雷管",
+        "commodityKey": "cj:price:电子雷管",
+        "weight": 0.3
+      },
+      {
+        "productName": "爆破服务",
+        "commodityKey": "cj:price:工业炸药",
+        "weight": 0.3
+      }
     ]
   },
   {
     "code": "002226.SZ",
     "name": "江南化工",
     "group": "explosive",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "工业炸药",
         "commodityKey": "cj:price:硝酸铵",
@@ -1449,13 +2554,30 @@
         "commodityKey": "cj:price:风电机组",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "cj:price:硝酸铵",
+        "weight": 0.4
+      },
+      {
+        "productName": "雷管",
+        "commodityKey": "cj:price:电子雷管",
+        "weight": 0.25
+      },
+      {
+        "productName": "风电",
+        "commodityKey": "cj:price:风电机组",
+        "weight": 0.3
+      }
     ]
   },
   {
     "code": "002783.SZ",
     "name": "凯龙股份",
     "group": "explosive",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "工业炸药",
         "commodityKey": "cj:price:硝酸铵",
@@ -1471,13 +2593,30 @@
         "commodityKey": "cj:price:复合肥",
         "weight": 0.25
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "cj:price:硝酸铵",
+        "weight": 0.35
+      },
+      {
+        "productName": "硝酸铵",
+        "commodityKey": "cj:price:硝酸铵",
+        "weight": 0.3
+      },
+      {
+        "productName": "复合肥",
+        "commodityKey": "cj:price:复合肥",
+        "weight": 0.3
+      }
     ]
   },
   {
     "code": "603227.SH",
     "name": "雪峰科技",
     "group": "explosive",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "工业炸药",
         "commodityKey": "cj:price:硝酸铵",
@@ -1493,13 +2632,30 @@
         "commodityKey": "cj:price:工业炸药",
         "weight": 0.2
       }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "cj:price:硝酸铵",
+        "weight": 0.4
+      },
+      {
+        "productName": "硝酸铵",
+        "commodityKey": "cj:price:硝酸铵",
+        "weight": 0.25
+      },
+      {
+        "productName": "爆破服务",
+        "commodityKey": "cj:price:工业炸药",
+        "weight": 0.3
+      }
     ]
   },
   {
     "code": "603977.SH",
     "name": "国泰集团",
     "group": "explosive",
-    "products": [
+    "productsByRevenue": [
       {
         "productName": "工业炸药",
         "commodityKey": "cj:price:硝酸铵",
@@ -1509,6 +2665,23 @@
         "productName": "电子雷管",
         "commodityKey": "cj:price:电子雷管",
         "weight": 0.3
+      },
+      {
+        "productName": "高氯酸钾",
+        "commodityKey": "cj:price:高氯酸钾",
+        "weight": 0.25
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "cj:price:硝酸铵",
+        "weight": 0.35
+      },
+      {
+        "productName": "电子雷管",
+        "commodityKey": "cj:price:电子雷管",
+        "weight": 0.35
       },
       {
         "productName": "高氯酸钾",

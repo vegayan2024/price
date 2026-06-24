@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import type { AppData, DivergenceSignal } from "../types";
+import type { AppData, DivergenceSignal, WeightType } from "../types";
 import SignalTable from "../components/SignalTable";
 import CorrelationHeatmap from "../components/CorrelationHeatmap";
 import CompanyListTable from "../components/CompanyListTable";
@@ -13,6 +13,7 @@ type Tab = "signals" | "heatmap" | "all";
 
 export default function DashboardPage({ data }: DashboardPageProps) {
   const [activeTab, setActiveTab] = useState<Tab>("signals");
+  const [weightType, setWeightType] = useState<WeightType>("revenue");
   const navigate = useNavigate();
 
   const handleSelectSignal = (signal: DivergenceSignal) => {
@@ -51,6 +52,24 @@ export default function DashboardPage({ data }: DashboardPageProps) {
         </button>
       </div>
 
+      {activeTab === "all" && (
+        <div className="weight-selector">
+          <span className="weight-label">权重模式:</span>
+          <button
+            className={`c-btn ${weightType === "revenue" ? "c-btn--primary" : "c-btn--secondary"}`}
+            onClick={() => setWeightType("revenue")}
+          >
+            收入权重
+          </button>
+          <button
+            className={`c-btn ${weightType === "profit" ? "c-btn--primary" : "c-btn--secondary"}`}
+            onClick={() => setWeightType("profit")}
+          >
+            利润权重
+          </button>
+        </div>
+      )}
+
       <div className="tab-content">
         {activeTab === "signals" && (
           <SignalTable signals={data.signals} onSelectSignal={handleSelectSignal} />
@@ -60,6 +79,7 @@ export default function DashboardPage({ data }: DashboardPageProps) {
             companies={data.companies}
             correlations={data.correlations}
             signals={data.signals}
+            weightType={weightType}
             onSelectCompany={handleSelectCompany}
           />
         )}

@@ -9,8 +9,12 @@ export interface Company {
   code: string;
   name: string;
   group: "chemical" | "mining" | "explosive";
-  products: ProductMapping[];
+  productsByRevenue: ProductMapping[];
+  productsByProfit: ProductMapping[];
 }
+
+/** 权重类型 */
+export type WeightType = "revenue" | "profit";
 
 /** 公司产品映射 */
 export interface ProductMapping {

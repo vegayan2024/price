@@ -25,6 +25,11 @@ const revenueWeights = JSON.parse(
   readFileSync(join(OUTPUT_PATH, "../../scripts/company-revenue-weights.json"), "utf-8")
 );
 
+// 读取利润权重
+const profitWeights = JSON.parse(
+  readFileSync(join(OUTPUT_PATH, "../../scripts/company-profit-weights.json"), "utf-8")
+);
+
 // 手动定义公司分组（从 company-groups.ts 提取）
 const companyGroups = {
   chemical: ['002408.SZ', '600500.SH', '600486.SH', '600378.SH', '600409.SH', '600328.SH', '000819.SZ', '002136.SZ', '600866.SH', '600298.SH', '000554.SZ', '000830.SZ', '600028.SH', '002597.SZ', '002637.SZ', '603599.SH', '600352.SH', '601117.SH', '002493.SZ', '601233.SH', '603077.SH', '600746.SH', '000731.SZ', '300758.SZ', '000990.SZ', '002648.SZ', '600955.SH', '603968.SH', '002469.SZ', '300927.SZ', '601678.SH', '601216.SH', '002092.SZ', '002748.SZ', '605399.SH', '600499.SH', '000792.SZ', '601857.SH', '601118.SH', '002100.SZ', '600299.SH', '600230.SH', '002258.SZ', '600160.SH', '600426.SH', '000930.SZ'],
@@ -211,12 +216,26 @@ for (const research of legacyResearch.research) {
   if (manualMapping[code]) {
     const mapping = manualMapping[code];
     // 使用收入权重（如果有的话）
-    const weightData = revenueWeights[code];
-    const products = mapping.map((p, index) => ({
+    const revenueWeightData = revenueWeights[code];
+    const profitWeightData = profitWeights[code];
+
+    const productsWithRevenue = mapping.map((p, index) => ({
       ...p,
-      weight: weightData?.weights?.[index] ?? (1 / mapping.length),
+      weight: revenueWeightData?.weights?.[index] ?? (1 / mapping.length),
     }));
-    companies.push({ code, name: research.name, group, products });
+
+    const productsWithProfit = mapping.map((p, index) => ({
+      ...p,
+      weight: profitWeightData?.weights?.[index] ?? (1 / mapping.length),
+    }));
+
+    companies.push({
+      code,
+      name: research.name,
+      group,
+      productsByRevenue: productsWithRevenue,
+      productsByProfit: productsWithProfit,
+    });
     continue;
   }
 
@@ -265,7 +284,7 @@ for (const research of legacyResearch.research) {
     products = [{ productName: "-", commodityKey: "unknown:-", commodityName: "-" }];
   }
 
-  // 均匀权重
+  // 均匀权重（作为默认）
   const weight = Math.round((1 / products.length) * 100) / 100;
   const productsWithWeight = products.map((p) => ({
     ...p,
@@ -276,7 +295,8 @@ for (const research of legacyResearch.research) {
     code,
     name: research.name,
     group,
-    products: productsWithWeight,
+    productsByRevenue: productsWithWeight,
+    productsByProfit: productsWithWeight,
   });
 }
 
@@ -301,7 +321,7 @@ console.log(`生成 ${companies.length} 家公司的产品映射`);
 let matchedCount = 0;
 let unmatchedProducts = [];
 for (const company of companies) {
-  for (const product of company.products) {
+  for (const product of company.productsByRevenue) {
     if (product.commodityKey.startsWith("unknown:")) {
       unmatchedProducts.push(`${company.name}: ${product.productName}`);
     } else {

@@ -1,10 +1,11 @@
 import { useState, useMemo } from "react";
-import type { Company, CorrelationData, DivergenceSignal } from "../types";
+import type { Company, CorrelationData, DivergenceSignal, WeightType } from "../types";
 
 interface CompanyListTableProps {
   companies: Company[];
   correlations: CorrelationData[];
   signals: DivergenceSignal[];
+  weightType: WeightType;
   onSelectCompany?: (code: string) => void;
 }
 
@@ -16,6 +17,7 @@ export default function CompanyListTable({
   companies,
   correlations,
   signals,
+  weightType,
   onSelectCompany,
 }: CompanyListTableProps) {
   const [sortField, setSortField] = useState<SortField>("code");
@@ -30,9 +32,11 @@ export default function CompanyListTable({
     return companies.map((company) => {
       const correlation = correlationMap.get(company.code);
       const signal = signalMap.get(company.code);
-      const firstProduct = company.products[0];
+      const products = weightType === "revenue" ? company.productsByRevenue : company.productsByProfit;
+      const firstProduct = products[0];
       return {
         ...company,
+        products,
         correlation60d: correlation?.correlation60d ?? null,
         correlation120d: correlation?.correlation120d ?? null,
         correlation250d: correlation?.correlation250d ?? null,
@@ -43,7 +47,7 @@ export default function CompanyListTable({
         commodityName: firstProduct?.commodityName ?? "-",
       };
     });
-  }, [companies, correlations, signals]);
+  }, [companies, correlations, signals, weightType]);
 
   // 筛选
   const filteredData = useMemo(() => {
