@@ -37,6 +37,25 @@ for (const file of valuationFiles) {
     const priceHistory = pbBands.map((item) => item.price).filter((p) => p !== null);
     const latestPrice = priceHistory.length > 0 ? priceHistory[priceHistory.length - 1] : close;
 
+    // 计算股价在20%低位的持续时间
+    let low20DurationYears = 0;
+    if (priceHistory.length > 0) {
+      const sortedPrices = [...priceHistory].sort((a, b) => a - b);
+      const low20Index = Math.floor(sortedPrices.length * 0.2);
+      const low20Price = sortedPrices[low20Index];
+
+      // 从最近的数据开始，计算在20%低位以下的连续天数
+      let consecutiveDays = 0;
+      for (let i = priceHistory.length - 1; i >= 0; i--) {
+        if (priceHistory[i] <= low20Price) {
+          consecutiveDays++;
+        } else {
+          break;
+        }
+      }
+      low20DurationYears = consecutiveDays / 52; // 周线数据，每年约52周
+    }
+
     valuationData[code] = {
       code,
       name: data.name ?? code,
@@ -46,6 +65,7 @@ for (const file of valuationFiles) {
       pbPercentile: latestPbPercentile,
       pePercentile: latestPePercentile,
       priceHistory,
+      low20DurationYears,
     };
 
     successCount++;

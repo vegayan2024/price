@@ -62,6 +62,7 @@ export interface ValuationData {
   pbPercentile: number | null;
   pePercentile: number | null;
   priceHistory: number[];
+  low20DurationYears: number;
 }
 
 /** 应用数据 */

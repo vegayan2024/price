@@ -15,6 +15,7 @@ interface CompanySignals {
   valuation?: ValuationData;
   stockInLow10?: boolean;
   pbInLow20?: boolean;
+  stockInLow20Over2Years?: boolean;
 }
 
 export default function GroupedSignalTable({
@@ -47,6 +48,9 @@ export default function GroupedSignalTable({
         // 计算PB是否在历史20%分位点
         const pbInLow20 = valuation?.pbPercentile !== null && valuation?.pbPercentile !== undefined && valuation.pbPercentile <= 20;
 
+        // 计算股价在20%低位是否超过2年
+        const stockInLow20Over2Years = valuation?.low20DurationYears !== undefined && valuation.low20DurationYears >= 2;
+
         companyMap.set(signal.code, {
           code: signal.code,
           name: signal.name,
@@ -54,6 +58,7 @@ export default function GroupedSignalTable({
           valuation,
           stockInLow10,
           pbInLow20,
+          stockInLow20Over2Years,
         });
       }
     }
@@ -96,8 +101,9 @@ export default function GroupedSignalTable({
         <div className="col-company">公司</div>
         <div className="col-signals">信号数</div>
         <div className="col-type">主要类型</div>
-        <div className="col-stock">股价位置</div>
-        <div className="col-pb">PB分位</div>
+        <div className="col-stock">股价10%低位</div>
+        <div className="col-pb">PB 20%分位</div>
+        <div className="col-duration">低位2年+</div>
         <div className="col-expand"></div>
       </div>
 
@@ -129,16 +135,25 @@ export default function GroupedSignalTable({
               </div>
               <div className="col-stock">
                 {company.stockInLow10 ? (
-                  <span className="badge badge-low10">历史10%低位</span>
+                  <span className="badge badge-low10">✓</span>
                 ) : (
                   <span className="text-muted">-</span>
                 )}
               </div>
               <div className="col-pb">
                 {company.pbInLow20 ? (
-                  <span className="badge badge-pb20">PB {company.valuation?.pbPercentile?.toFixed(1)}%</span>
+                  <span className="badge badge-pb20">✓ {company.valuation?.pbPercentile?.toFixed(1)}%</span>
                 ) : company.valuation?.pbPercentile !== null && company.valuation?.pbPercentile !== undefined ? (
-                  <span className="text-muted">PB {company.valuation.pbPercentile.toFixed(1)}%</span>
+                  <span className="text-muted">{company.valuation.pbPercentile.toFixed(1)}%</span>
+                ) : (
+                  <span className="text-muted">-</span>
+                )}
+              </div>
+              <div className="col-duration">
+                {company.stockInLow20Over2Years ? (
+                  <span className="badge badge-duration">✓ {company.valuation?.low20DurationYears.toFixed(1)}年</span>
+                ) : company.valuation?.low20DurationYears !== undefined ? (
+                  <span className="text-muted">{company.valuation.low20DurationYears.toFixed(1)}年</span>
                 ) : (
                   <span className="text-muted">-</span>
                 )}
