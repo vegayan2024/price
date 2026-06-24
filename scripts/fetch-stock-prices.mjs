@@ -76,8 +76,8 @@ async function main() {
         failCount++;
       }
 
-      // Tushare 限流：每分钟约200次请求
-      await new Promise((resolve) => setTimeout(resolve, 350));
+      // Tushare 限流：每分钟1次请求
+      await new Promise((resolve) => setTimeout(resolve, 65000));
     } catch (error) {
       console.log(`✗ ${error.message}`);
       failCount++;
