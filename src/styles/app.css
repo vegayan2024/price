@@ -200,6 +200,106 @@
   text-align: center;
 }
 
+/* 公司列表 */
+.company-list {
+  margin-top: var(--space-4);
+}
+
+.company-list__filters {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  color: var(--text-muted);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+}
+
+.filter-btn {
+  padding: var(--space-2) var(--space-3);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-1);
+  color: var(--text-muted);
+  font-size: var(--fs-caption);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.filter-btn:hover {
+  border-color: var(--brand);
+  color: var(--text);
+}
+
+.filter-btn--active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-fg);
+}
+
+/* 分组标签 */
+.group-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-1);
+  font-size: var(--fs-tiny);
+  font-weight: var(--fw-medium);
+}
+
+.group-chemical {
+  background: var(--info-soft);
+  color: var(--info);
+}
+
+.group-mining {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.group-explosive {
+  background: var(--rise-soft);
+  color: var(--rise);
+}
+
+/* 信号徽章 */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-1);
+  font-size: var(--fs-tiny);
+  font-weight: var(--fw-medium);
+}
+
+.badge--none {
+  background: var(--bg-raised);
+  color: var(--text-muted);
+}
+
+.badge--positive {
+  background: var(--rise-soft);
+  color: var(--rise);
+}
+
+.badge--negative {
+  background: var(--fall-soft);
+  color: var(--fall);
+}
+
+.badge--strong {
+  font-weight: var(--fw-bold);
+}
+
 /* 响应式 */
 @media (max-width: 768px) {
   .c-navbar__label--full { display: none; }

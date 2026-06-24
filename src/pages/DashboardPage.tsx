@@ -3,12 +3,13 @@ import { useNavigate } from "react-router-dom";
 import type { AppData, DivergenceSignal } from "../types";
 import SignalTable from "../components/SignalTable";
 import CorrelationHeatmap from "../components/CorrelationHeatmap";
+import CompanyListTable from "../components/CompanyListTable";
 
 interface DashboardPageProps {
   data: AppData;
 }
 
-type Tab = "signals" | "heatmap";
+type Tab = "signals" | "heatmap" | "all";
 
 export default function DashboardPage({ data }: DashboardPageProps) {
   const [activeTab, setActiveTab] = useState<Tab>("signals");
@@ -16,6 +17,10 @@ export default function DashboardPage({ data }: DashboardPageProps) {
 
   const handleSelectSignal = (signal: DivergenceSignal) => {
     navigate(`/divergence/${signal.code}`);
+  };
+
+  const handleSelectCompany = (code: string) => {
+    navigate(`/divergence/${code}`);
   };
 
   return (
@@ -30,7 +35,13 @@ export default function DashboardPage({ data }: DashboardPageProps) {
           className={`c-tab ${activeTab === "signals" ? "c-tab--active" : ""}`}
           onClick={() => setActiveTab("signals")}
         >
-          背离信号列表
+          背离信号列表 ({data.signals.length})
+        </button>
+        <button
+          className={`c-tab ${activeTab === "all" ? "c-tab--active" : ""}`}
+          onClick={() => setActiveTab("all")}
+        >
+          全部股票 ({data.companies.length})
         </button>
         <button
           className={`c-tab ${activeTab === "heatmap" ? "c-tab--active" : ""}`}
@@ -43,6 +54,14 @@ export default function DashboardPage({ data }: DashboardPageProps) {
       <div className="tab-content">
         {activeTab === "signals" && (
           <SignalTable signals={data.signals} onSelectSignal={handleSelectSignal} />
+        )}
+        {activeTab === "all" && (
+          <CompanyListTable
+            companies={data.companies}
+            correlations={data.correlations}
+            signals={data.signals}
+            onSelectCompany={handleSelectCompany}
+          />
         )}
         {activeTab === "heatmap" && (
           <CorrelationHeatmap correlations={data.correlations} />
