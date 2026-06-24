@@ -1,0 +1,64 @@
+/* ============================================================
+   价格背离终端 · 基础样式
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap");
+
+/* reset */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg-base);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img, svg, video, canvas { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+/* 链接 */
+a {
+  color: var(--brand);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
+a:hover { filter: brightness(1.15); }
+
+/* 标题 */
+h1, h2, h3, h4 {
+  color: var(--text-strong);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-tight);
+  margin: 0;
+  line-height: var(--lh-tight);
+}
+h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-lead); }
+
+p   { margin: 0; }
+hr  { border: 0; border-top: 1px solid var(--border); margin: var(--space-6) 0; }
+
+/* 辅助类 */
+.row { display: flex; align-items: center; }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.label-mono { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--text-muted); letter-spacing: var(--ls-wide); text-transform: uppercase; }
+
+.t-rise  { color: var(--rise); }
+.t-fall  { color: var(--fall); }
+.t-flat  { color: var(--flat); }
+.t-info  { color: var(--info); }
+.t-warn  { color: var(--warn); }
+
+.text-muted { color: var(--text-muted); }

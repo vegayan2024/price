@@ -1,0 +1,109 @@
+[
+  {
+    "code": "600328.SH",
+    "name": "中盐化工",
+    "group": "chemical",
+    "products": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "cj:price:纯碱(轻质,华东)",
+        "commodityName": "纯碱",
+        "weight": 0.6
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:烧碱(32%,华东)",
+        "commodityName": "烧碱",
+        "weight": 0.4
+      }
+    ]
+  },
+  {
+    "code": "000830.SZ",
+    "name": "鲁西化工",
+    "group": "chemical",
+    "products": [
+      {
+        "productName": "尿素",
+        "commodityKey": "cj:price:尿素(华东)",
+        "commodityName": "尿素",
+        "weight": 0.5
+      },
+      {
+        "productName": "甲醇",
+        "commodityKey": "cj:price:甲醇(华东)",
+        "commodityName": "甲醇",
+        "weight": 0.3
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "cj:price:烧碱(32%,华东)",
+        "commodityName": "烧碱",
+        "weight": 0.2
+      }
+    ]
+  },
+  {
+    "code": "600459.SH",
+    "name": "贵研铂业",
+    "group": "mining",
+    "products": [
+      {
+        "productName": "铂",
+        "commodityKey": "lme:price:铂",
+        "commodityName": "LME铂",
+        "weight": 0.4
+      },
+      {
+        "productName": "钯",
+        "commodityKey": "lme:price:钯",
+        "commodityName": "LME钯",
+        "weight": 0.3
+      },
+      {
+        "productName": "铑",
+        "commodityKey": "lme:price:铑",
+        "commodityName": "LME铑",
+        "weight": 0.3
+      }
+    ]
+  },
+  {
+    "code": "000878.SZ",
+    "name": "云南铜业",
+    "group": "mining",
+    "products": [
+      {
+        "productName": "铜",
+        "commodityKey": "lme:price:铜",
+        "commodityName": "LME铜",
+        "weight": 0.8
+      },
+      {
+        "productName": "黄金",
+        "commodityKey": "lme:price:黄金",
+        "commodityName": "LME黄金",
+        "weight": 0.2
+      }
+    ]
+  },
+  {
+    "code": "601061.SH",
+    "name": "中信金属",
+    "group": "mining",
+    "products": [
+      {
+        "productName": "铌",
+        "commodityKey": "lme:price:铌",
+        "commodityName": "LME铌",
+        "weight": 0.5
+      },
+      {
+        "productName": "铜",
+        "commodityKey": "lme:price:铜",
+        "commodityName": "LME铜",
+        "weight": 0.5
+      }
+    ]
+  }
+]

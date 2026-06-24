@@ -1,0 +1,58 @@
+[
+  {
+    "code": "600328.SH",
+    "name": "中盐化工",
+    "productName": "纯碱",
+    "commodityName": "纯碱",
+    "divergenceType": "positive",
+    "divergenceScore": 0.185,
+    "correlation": 0.23,
+    "stockChange": -0.12,
+    "commodityChange": 0.065,
+    "startDate": "2025-01-15",
+    "endDate": "2025-03-15",
+    "signalStrength": "strong"
+  },
+  {
+    "code": "000830.SZ",
+    "name": "鲁西化工",
+    "productName": "甲醇",
+    "commodityName": "甲醇",
+    "divergenceType": "negative",
+    "divergenceScore": 0.142,
+    "correlation": 0.31,
+    "stockChange": 0.08,
+    "commodityChange": -0.062,
+    "startDate": "2025-02-01",
+    "endDate": "2025-03-20",
+    "signalStrength": "medium"
+  },
+  {
+    "code": "000878.SZ",
+    "name": "云南铜业",
+    "productName": "铜",
+    "commodityName": "LME铜",
+    "divergenceType": "positive",
+    "divergenceScore": 0.215,
+    "correlation": 0.18,
+    "stockChange": -0.08,
+    "commodityChange": 0.135,
+    "startDate": "2025-01-20",
+    "endDate": "2025-03-25",
+    "signalStrength": "strong"
+  },
+  {
+    "code": "601061.SH",
+    "name": "中信金属",
+    "productName": "铜",
+    "commodityName": "LME铜",
+    "divergenceType": "positive",
+    "divergenceScore": 0.156,
+    "correlation": 0.25,
+    "stockChange": -0.05,
+    "commodityChange": 0.106,
+    "startDate": "2025-02-10",
+    "endDate": "2025-03-28",
+    "signalStrength": "medium"
+  }
+]

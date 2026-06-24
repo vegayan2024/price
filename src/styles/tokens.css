@@ -1,0 +1,148 @@
+/* ============================================================
+   价格背离终端 · 设计 Token
+   ============================================================ */
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* 色彩 · 表面层级 */
+  --bg-base: #12151a;
+  --bg-panel: #181c23;
+  --bg-raised: #1f242d;
+  --bg-float: #272d38;
+
+  --border: #242a33;
+  --border-strong: #303840;
+  --divider: #424a56;
+
+  /* 色彩 · 文字层级 */
+  --text-strong: #e6e8eb;
+  --text: #a8b0bc;
+  --text-muted: #6b7380;
+  --text-faint: #4a525e;
+
+  /* 色彩 · 品牌 + 语义 */
+  --brand: #f5a524;
+  --brand-fg: #0a0d12;
+  --brand-soft: rgba(245, 165, 36, 0.15);
+
+  --rise: #ef4d4d;
+  --rise-soft: rgba(239, 77, 77, 0.15);
+  --fall: #00c896;
+  --fall-soft: rgba(0, 200, 150, 0.15);
+  --flat: #6b7380;
+
+  --info: #3da9fc;
+  --info-soft: rgba(61, 169, 252, 0.15);
+  --warn: #f5a524;
+  --danger: #ef4d4d;
+
+  /* 可视化调色板 */
+  --viz-1: #f5a524;
+  --viz-2: #3da9fc;
+  --viz-3: #a872f5;
+  --viz-4: #00c896;
+  --viz-5: #ff6b9b;
+  --viz-6: #5be584;
+  --viz-7: #ffc857;
+  --viz-8: #ff8a65;
+  --viz-9: #ba68c8;
+  --viz-10: #4dd0e1;
+
+  /* 字体 */
+  --font-sans: "Inter", "Noto Sans SC", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-en: "Inter", system-ui, sans-serif;
+
+  /* 字号 */
+  --fs-tiny: 10px;
+  --fs-caption: 11px;
+  --fs-small: 12px;
+  --fs-body: 13px;
+  --fs-lead: 15px;
+  --fs-h4: 17px;
+  --fs-h3: 20px;
+  --fs-h2: 24px;
+  --fs-h1: 30px;
+
+  /* 字重 */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* 间距 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* 圆角 */
+  --radius-1: 4px;
+  --radius-2: 6px;
+  --radius-3: 8px;
+  --radius-4: 12px;
+
+  /* 动画 */
+  --dur-fast: 120ms;
+  --dur-normal: 200ms;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+  /* 行高 */
+  --lh-tight: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.75;
+
+  /* 字间距 */
+  --ls-tight: -0.01em;
+  --ls-normal: 0;
+  --ls-wide: 0.02em;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-base: #f9fafb;
+  --bg-panel: #ffffff;
+  --bg-raised: #f3f4f6;
+  --bg-float: #e5e7eb;
+
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --divider: #9ca3af;
+
+  --text-strong: #111827;
+  --text: #374151;
+  --text-muted: #6b7280;
+  --text-faint: #9ca3af;
+
+  --brand: #d97706;
+  --brand-fg: #ffffff;
+  --brand-soft: rgba(217, 119, 6, 0.1);
+
+  --rise: #dc2626;
+  --rise-soft: rgba(220, 38, 38, 0.1);
+  --fall: #059669;
+  --fall-soft: rgba(5, 150, 105, 0.1);
+  --flat: #6b7280;
+
+  --info: #2563eb;
+  --info-soft: rgba(37, 99, 235, 0.1);
+  --warn: #d97706;
+  --danger: #dc2626;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+}

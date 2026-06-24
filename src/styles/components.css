@@ -1,0 +1,288 @@
+/* ============================================================
+   价格背离终端 · 组件样式
+   ============================================================ */
+
+/* 按钮 */
+.c-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--space-2);
+  padding: 9px 20px;
+  font-family: var(--font-en);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-wide);
+  border: 1px solid transparent;
+  border-radius: var(--radius-1);
+  background: var(--bg-raised);
+  color: var(--text-strong);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease),
+              border-color var(--dur-fast) var(--ease),
+              color var(--dur-fast) var(--ease),
+              filter var(--dur-fast) var(--ease);
+}
+.c-btn:hover    { filter: brightness(1.08); }
+.c-btn:disabled { background: var(--border-strong); color: var(--text-muted); cursor: not-allowed; filter: none; }
+
+.c-btn--primary   { background: var(--brand); color: var(--brand-fg); }
+.c-btn--secondary { background: var(--bg-raised); color: var(--text-strong); border-color: var(--border-strong); }
+.c-btn--ghost     { background: transparent; color: var(--text); border-color: var(--border-strong); }
+
+/* 导航栏 */
+.c-navbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 0 var(--space-4);
+  height: 48px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+}
+
+.c-navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--brand);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-body);
+}
+
+.c-navbar__brand-name {
+  color: var(--text-strong);
+}
+
+.c-navbar__menu {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.c-navbar__menu a {
+  display: flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  color: var(--text-muted);
+  font-size: var(--fs-small);
+  border-radius: var(--radius-1);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.c-navbar__menu a:hover {
+  color: var(--text);
+  background: var(--bg-raised);
+}
+
+.c-navbar__menu a.is-active {
+  color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.c-navbar__label--short { display: none; }
+
+.c-navbar__meta {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Ticker */
+.c-ticker {
+  display: flex;
+  gap: var(--space-6);
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--fs-caption);
+}
+
+.c-ticker__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.c-ticker__label {
+  color: var(--text-muted);
+}
+
+.c-ticker__value {
+  color: var(--text-strong);
+  font-weight: var(--fw-medium);
+}
+
+.c-ticker__change {
+  font-size: var(--fs-tiny);
+}
+
+/* 主内容区 */
+.terminal-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-6);
+}
+
+/* 状态栏 */
+.c-statusbar {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border);
+  font-size: var(--fs-tiny);
+  color: var(--text-muted);
+}
+
+/* 圆点指示器 */
+.c-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.c-dot--brand { background: var(--brand); }
+.c-dot--rise { background: var(--rise); }
+.c-dot--fall { background: var(--fall); }
+.c-dot--flat { background: var(--flat); }
+
+.c-dot--pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* 分段控件 */
+.c-segment {
+  display: inline-flex;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-1);
+  overflow: hidden;
+}
+
+.c-segment__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.c-segment__item:hover {
+  background: var(--bg-raised);
+  color: var(--text);
+}
+
+.c-segment__item--active {
+  background: var(--brand);
+  color: var(--brand-fg);
+}
+
+/* 表格 */
+.c-table-wrap {
+  overflow-x: auto;
+}
+
+.c-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-small);
+}
+
+.c-table th,
+.c-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.c-table th {
+  background: var(--bg-raised);
+  color: var(--text-muted);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-caption);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wide);
+  white-space: nowrap;
+}
+
+.c-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.c-table th.sortable:hover {
+  color: var(--text);
+}
+
+.c-table tr.clickable {
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.c-table tr.clickable:hover {
+  background: var(--bg-raised);
+}
+
+.cell-primary {
+  color: var(--text-strong);
+  font-weight: var(--fw-medium);
+}
+
+.cell-secondary {
+  color: var(--text-muted);
+  font-size: var(--fs-caption);
+}
+
+/* 空状态 */
+.c-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12);
+  color: var(--text-muted);
+  font-size: var(--fs-body);
+}
+
+/* 启动屏幕 */
+.boot-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  height: 100vh;
+  color: var(--text-strong);
+}
+
+.boot-screen h1 {
+  font-size: var(--fs-h2);
+}
+
+/* 加载屏幕 */
+.route-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-12);
+  color: var(--text-muted);
+}
+
+/* 旋转动画 */
+.is-spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
