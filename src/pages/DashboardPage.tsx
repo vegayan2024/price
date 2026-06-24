@@ -75,6 +75,7 @@ export default function DashboardPage({ data }: DashboardPageProps) {
           <GroupedSignalTable
             signals={data.signals}
             valuationData={data.valuationData}
+            financialData={data.financialData}
             onSelectSignal={handleSelectSignal}
           />
         )}

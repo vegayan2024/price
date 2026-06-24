@@ -1,10 +1,11 @@
 import { useState, useMemo } from "react";
-import type { DivergenceSignal, ValuationData } from "../types";
+import type { DivergenceSignal, ValuationData, FinancialData } from "../types";
 import { formatPercent } from "../lib/format";
 
 interface GroupedSignalTableProps {
   signals: DivergenceSignal[];
   valuationData: Record<string, ValuationData>;
+  financialData: Record<string, FinancialData>;
   onSelectSignal?: (signal: DivergenceSignal) => void;
 }
 
@@ -13,14 +14,18 @@ interface CompanySignals {
   name: string;
   signals: DivergenceSignal[];
   valuation?: ValuationData;
+  financial?: FinancialData;
   stockInLow10?: boolean;
   pbInLow20?: boolean;
   stockInLow20Over2Years?: boolean;
+  profitGrowing?: boolean;
+  debtHealthy?: boolean;
 }
 
 export default function GroupedSignalTable({
   signals,
   valuationData,
+  financialData,
   onSelectSignal,
 }: GroupedSignalTableProps) {
   const [expandedCompanies, setExpandedCompanies] = useState<Set<string>>(new Set());
@@ -35,6 +40,7 @@ export default function GroupedSignalTable({
         existing.signals.push(signal);
       } else {
         const valuation = valuationData[signal.code];
+        const financial = financialData[signal.code];
 
         // 计算股价是否在历史10%低位
         let stockInLow10 = false;
@@ -51,20 +57,29 @@ export default function GroupedSignalTable({
         // 计算股价在20%低位是否超过2年
         const stockInLow20Over2Years = valuation?.low20DurationYears !== undefined && valuation.low20DurationYears >= 2;
 
+        // 验证条件1：扣非利润同比增长
+        const profitGrowing = financial?.deductedProfitYoY !== null && financial?.deductedProfitYoY !== undefined && financial.deductedProfitYoY > 0;
+
+        // 验证条件2：资产负债率 < 75%
+        const debtHealthy = financial?.debtToAssets !== null && financial?.debtToAssets !== undefined && financial.debtToAssets < 75;
+
         companyMap.set(signal.code, {
           code: signal.code,
           name: signal.name,
           signals: [signal],
           valuation,
+          financial,
           stockInLow10,
           pbInLow20,
           stockInLow20Over2Years,
+          profitGrowing,
+          debtHealthy,
         });
       }
     }
 
     return Array.from(companyMap.values());
-  }, [signals, valuationData]);
+  }, [signals, valuationData, financialData]);
 
   const toggleExpand = (code: string) => {
     const newExpanded = new Set(expandedCompanies);
@@ -104,6 +119,8 @@ export default function GroupedSignalTable({
         <div className="col-stock">股价10%低位</div>
         <div className="col-pb">PB 20%分位</div>
         <div className="col-duration">低位2年+</div>
+        <div className="col-profit">扣非增长</div>
+        <div className="col-debt">负债率</div>
         <div className="col-expand"></div>
       </div>
 
@@ -154,6 +171,24 @@ export default function GroupedSignalTable({
                   <span className="badge badge-duration">✓ {company.valuation?.low20DurationYears.toFixed(1)}年</span>
                 ) : company.valuation?.low20DurationYears !== undefined ? (
                   <span className="text-muted">{company.valuation.low20DurationYears.toFixed(1)}年</span>
+                ) : (
+                  <span className="text-muted">-</span>
+                )}
+              </div>
+              <div className="col-profit">
+                {company.profitGrowing ? (
+                  <span className="badge badge-profit">✓ {company.financial?.deductedProfitYoY?.toFixed(1)}%</span>
+                ) : company.financial?.deductedProfitYoY !== null && company.financial?.deductedProfitYoY !== undefined ? (
+                  <span className="text-muted">{company.financial.deductedProfitYoY.toFixed(1)}%</span>
+                ) : (
+                  <span className="text-muted">-</span>
+                )}
+              </div>
+              <div className="col-debt">
+                {company.debtHealthy ? (
+                  <span className="badge badge-debt">✓ {company.financial?.debtToAssets?.toFixed(1)}%</span>
+                ) : company.financial?.debtToAssets !== null && company.financial?.debtToAssets !== undefined ? (
+                  <span className="text-muted">{company.financial.debtToAssets.toFixed(1)}%</span>
                 ) : (
                   <span className="text-muted">-</span>
                 )}

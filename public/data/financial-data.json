@@ -1,0 +1,485 @@
+{
+  "000554.SZ": {
+    "code": "000554.SZ",
+    "name": "泰山石油",
+    "year": "2025",
+    "deductedProfitYoY": 55.71,
+    "debtToAssets": 30.9716
+  },
+  "000819.SZ": {
+    "code": "000819.SZ",
+    "name": "岳阳兴长",
+    "year": "2025",
+    "deductedProfitYoY": -182.31,
+    "debtToAssets": 35.8879
+  },
+  "000878.SZ": {
+    "code": "000878.SZ",
+    "name": "云南铜业",
+    "year": "2025",
+    "deductedProfitYoY": -8.76,
+    "debtToAssets": 66.5452
+  },
+  "000923.SZ": {
+    "code": "000923.SZ",
+    "name": "河钢资源",
+    "year": "2025",
+    "deductedProfitYoY": 0.18,
+    "debtToAssets": 25.9848
+  },
+  "002057.SZ": {
+    "code": "002057.SZ",
+    "name": "中钢天源",
+    "year": "2025",
+    "deductedProfitYoY": 1.97,
+    "debtToAssets": 32.8948
+  },
+  "002096.SZ": {
+    "code": "002096.SZ",
+    "name": "易普力",
+    "year": "2025",
+    "deductedProfitYoY": 12.28,
+    "debtToAssets": 30.2676
+  },
+  "002136.SZ": {
+    "code": "002136.SZ",
+    "name": "安纳达",
+    "year": "2025",
+    "deductedProfitYoY": -923.02,
+    "debtToAssets": 39.5689
+  },
+  "002226.SZ": {
+    "code": "002226.SZ",
+    "name": "江南化工",
+    "year": "2025",
+    "deductedProfitYoY": -14.98,
+    "debtToAssets": 46.3855
+  },
+  "002408.SZ": {
+    "code": "002408.SZ",
+    "name": "齐翔腾达",
+    "year": "2025",
+    "deductedProfitYoY": -2099.89,
+    "debtToAssets": 54.2138
+  },
+  "002783.SZ": {
+    "code": "002783.SZ",
+    "name": "凯龙股份",
+    "year": "2025",
+    "deductedProfitYoY": -9.45,
+    "debtToAssets": 56.1475
+  },
+  "600063.SH": {
+    "code": "600063.SH",
+    "name": "皖维高新",
+    "year": "2025",
+    "deductedProfitYoY": 21.44,
+    "debtToAssets": 45.7399
+  },
+  "600298.SH": {
+    "code": "600298.SH",
+    "name": "安琪酵母",
+    "year": "2025",
+    "deductedProfitYoY": 14.85,
+    "debtToAssets": 49.3373
+  },
+  "600328.SH": {
+    "code": "600328.SH",
+    "name": "中盐化工",
+    "year": "2025",
+    "deductedProfitYoY": -85.88,
+    "debtToAssets": 37.5514
+  },
+  "600378.SH": {
+    "code": "600378.SH",
+    "name": "昊华科技",
+    "year": "2025",
+    "deductedProfitYoY": 36.72,
+    "debtToAssets": 40.6177
+  },
+  "600409.SH": {
+    "code": "600409.SH",
+    "name": "三友化工",
+    "year": "2025",
+    "deductedProfitYoY": -82.04,
+    "debtToAssets": 42.4179
+  },
+  "600459.SH": {
+    "code": "600459.SH",
+    "name": "贵研铂业",
+    "year": "2025",
+    "deductedProfitYoY": 8.96,
+    "debtToAssets": 59.382
+  },
+  "600486.SH": {
+    "code": "600486.SH",
+    "name": "扬农化工",
+    "year": "2025",
+    "deductedProfitYoY": 6.65,
+    "debtToAssets": 36.9088
+  },
+  "600500.SH": {
+    "code": "600500.SH",
+    "name": "中化国际",
+    "year": "2025",
+    "deductedProfitYoY": 21.52,
+    "debtToAssets": 68.3477
+  },
+  "600866.SH": {
+    "code": "600866.SH",
+    "name": "星湖科技",
+    "year": "2025",
+    "deductedProfitYoY": 3.79,
+    "debtToAssets": 50.9782
+  },
+  "601061.SH": {
+    "code": "601061.SH",
+    "name": "中信金属",
+    "year": "2025",
+    "deductedProfitYoY": 19.57,
+    "debtToAssets": 59.7629
+  },
+  "603227.SH": {
+    "code": "603227.SH",
+    "name": "雪峰科技",
+    "year": "2025",
+    "deductedProfitYoY": -24.68,
+    "debtToAssets": 28.7109
+  },
+  "603977.SH": {
+    "code": "603977.SH",
+    "name": "国泰集团",
+    "year": "2025",
+    "deductedProfitYoY": 41.38,
+    "debtToAssets": 42.7225
+  },
+  "000830.SZ": {
+    "code": "000830.SZ",
+    "name": "鲁西化工",
+    "year": "2025",
+    "deductedProfitYoY": -55.44,
+    "debtToAssets": 46.536
+  },
+  "600028.SH": {
+    "code": "600028.SH",
+    "name": "中国石化",
+    "year": "2025",
+    "deductedProfitYoY": -37.05,
+    "debtToAssets": 54.0841
+  },
+  "002597.SZ": {
+    "code": "002597.SZ",
+    "name": "金禾实业",
+    "year": "2025",
+    "deductedProfitYoY": -37.8,
+    "debtToAssets": 23.8883
+  },
+  "002637.SZ": {
+    "code": "002637.SZ",
+    "name": "赞宇科技",
+    "year": "2025",
+    "deductedProfitYoY": 37.93,
+    "debtToAssets": 55.8905
+  },
+  "603599.SH": {
+    "code": "603599.SH",
+    "name": "广信股份",
+    "year": "2025",
+    "deductedProfitYoY": -16.28,
+    "debtToAssets": 28.6519
+  },
+  "600352.SH": {
+    "code": "600352.SH",
+    "name": "浙江龙盛",
+    "year": "2025",
+    "deductedProfitYoY": -10.76,
+    "debtToAssets": 56.2582
+  },
+  "601117.SH": {
+    "code": "601117.SH",
+    "name": "中国化学",
+    "year": "2025",
+    "deductedProfitYoY": 13.94,
+    "debtToAssets": 69.8644
+  },
+  "002493.SZ": {
+    "code": "002493.SZ",
+    "name": "荣盛石化",
+    "year": "2025",
+    "deductedProfitYoY": 10.99,
+    "debtToAssets": 74.9137
+  },
+  "601233.SH": {
+    "code": "601233.SH",
+    "name": "桐昆股份",
+    "year": "2025",
+    "deductedProfitYoY": 68.18,
+    "debtToAssets": 65.7688
+  },
+  "603077.SH": {
+    "code": "603077.SH",
+    "name": "和邦生物",
+    "year": "2025",
+    "deductedProfitYoY": -1510.68,
+    "debtToAssets": 36.3373
+  },
+  "600746.SH": {
+    "code": "600746.SH",
+    "name": "江苏索普",
+    "year": "2025",
+    "deductedProfitYoY": -58.52,
+    "debtToAssets": 27.2344
+  },
+  "000731.SZ": {
+    "code": "000731.SZ",
+    "name": "四川美丰",
+    "year": "2025",
+    "deductedProfitYoY": -144.97,
+    "debtToAssets": 17.7584
+  },
+  "300758.SZ": {
+    "code": "300758.SZ",
+    "name": "七彩化学",
+    "year": "2025",
+    "deductedProfitYoY": -51.61,
+    "debtToAssets": 50.7712
+  },
+  "000990.SZ": {
+    "code": "000990.SZ",
+    "name": "诚志股份",
+    "year": "2025",
+    "deductedProfitYoY": -133.9,
+    "debtToAssets": 32.8035
+  },
+  "002648.SZ": {
+    "code": "002648.SZ",
+    "name": "卫星化学",
+    "year": "2026H1预告",
+    "deductedProfitYoY": 113.64,
+    "debtToAssets": null
+  },
+  "600955.SH": {
+    "code": "600955.SH",
+    "name": "维远股份",
+    "year": "2025",
+    "deductedProfitYoY": -1910,
+    "debtToAssets": 35.9311
+  },
+  "603968.SH": {
+    "code": "603968.SH",
+    "name": "醋化股份",
+    "year": "2025",
+    "deductedProfitYoY": 43.69,
+    "debtToAssets": 43.3633
+  },
+  "002469.SZ": {
+    "code": "002469.SZ",
+    "name": "三维化学",
+    "year": "2025",
+    "deductedProfitYoY": -27.5,
+    "debtToAssets": 24.9608
+  },
+  "601678.SH": {
+    "code": "601678.SH",
+    "name": "滨化股份",
+    "year": "2025",
+    "deductedProfitYoY": -0.06,
+    "debtToAssets": 49.9047
+  },
+  "601216.SH": {
+    "code": "601216.SH",
+    "name": "君正集团",
+    "year": "2025",
+    "deductedProfitYoY": 18.33,
+    "debtToAssets": 28.5941
+  },
+  "002092.SZ": {
+    "code": "002092.SZ",
+    "name": "中泰化学",
+    "year": "2025",
+    "deductedProfitYoY": 70.43,
+    "debtToAssets": 65.7242
+  },
+  "002748.SZ": {
+    "code": "002748.SZ",
+    "name": "世龙实业",
+    "year": "2025",
+    "deductedProfitYoY": 120.18,
+    "debtToAssets": 44.7294
+  },
+  "605399.SH": {
+    "code": "605399.SH",
+    "name": "晨光新材",
+    "year": "2025",
+    "deductedProfitYoY": null,
+    "debtToAssets": 35.7341
+  },
+  "600499.SH": {
+    "code": "600499.SH",
+    "name": "科达制造",
+    "year": "2025",
+    "deductedProfitYoY": 30.34,
+    "debtToAssets": 45.9331
+  },
+  "000792.SZ": {
+    "code": "000792.SZ",
+    "name": "盐湖股份",
+    "year": "2025",
+    "deductedProfitYoY": 77.04,
+    "debtToAssets": 14.1532
+  },
+  "601857.SH": {
+    "code": "601857.SH",
+    "name": "中国石油",
+    "year": "2025",
+    "deductedProfitYoY": -4.44,
+    "debtToAssets": 36.3671
+  },
+  "300927.SZ": {
+    "code": "300927.SZ",
+    "name": "江天化学",
+    "year": "2025",
+    "deductedProfitYoY": -93.45,
+    "debtToAssets": 53.8862
+  },
+  "601118.SH": {
+    "code": "601118.SH",
+    "name": "海南橡胶",
+    "year": "2025",
+    "deductedProfitYoY": -199.58,
+    "debtToAssets": 70.2893
+  },
+  "002100.SZ": {
+    "code": "002100.SZ",
+    "name": "天康生物",
+    "year": "2025",
+    "deductedProfitYoY": -65.91,
+    "debtToAssets": 50.9135
+  },
+  "600299.SH": {
+    "code": "600299.SH",
+    "name": "安迪苏",
+    "year": "2025",
+    "deductedProfitYoY": 9.73,
+    "debtToAssets": 28.4213
+  },
+  "601600.SH": {
+    "code": "601600.SH",
+    "name": "中国铝业",
+    "year": "2025",
+    "deductedProfitYoY": 2.35,
+    "debtToAssets": 46.0088
+  },
+  "000629.SZ": {
+    "code": "000629.SZ",
+    "name": "钒钛股份",
+    "year": "2025",
+    "deductedProfitYoY": -132.88,
+    "debtToAssets": 13.0984
+  },
+  "600230.SH": {
+    "code": "600230.SH",
+    "name": "沧州大化",
+    "year": "2025",
+    "deductedProfitYoY": 0,
+    "debtToAssets": 26.4851
+  },
+  "002258.SZ": {
+    "code": "002258.SZ",
+    "name": "利尔化学",
+    "year": "2025",
+    "deductedProfitYoY": 122.34,
+    "debtToAssets": 42.6037
+  },
+  "600160.SH": {
+    "code": "600160.SH",
+    "name": "巨化股份",
+    "year": "2025",
+    "deductedProfitYoY": 91.78,
+    "debtToAssets": 38.4781
+  },
+  "000960.SZ": {
+    "code": "000960.SZ",
+    "name": "锡业股份",
+    "year": "2025",
+    "deductedProfitYoY": 35.6,
+    "debtToAssets": 42.8983
+  },
+  "000962.SZ": {
+    "code": "000962.SZ",
+    "name": "东方钽业",
+    "year": "2025",
+    "deductedProfitYoY": 20.71,
+    "debtToAssets": 29.3644
+  },
+  "000657.SZ": {
+    "code": "000657.SZ",
+    "name": "中钨高新",
+    "year": "2025",
+    "deductedProfitYoY": 110.28,
+    "debtToAssets": 50.7758
+  },
+  "600426.SH": {
+    "code": "600426.SH",
+    "name": "华鲁恒升",
+    "year": "2025",
+    "deductedProfitYoY": -15.1,
+    "debtToAssets": 28.5231
+  },
+  "600961.SH": {
+    "code": "600961.SH",
+    "name": "株冶集团",
+    "year": "2025",
+    "deductedProfitYoY": 50,
+    "debtToAssets": 48.9376
+  },
+  "600301.SH": {
+    "code": "600301.SH",
+    "name": "华锡有色",
+    "year": "2025",
+    "deductedProfitYoY": 22.12,
+    "debtToAssets": 34.9228
+  },
+  "600392.SH": {
+    "code": "600392.SH",
+    "name": "盛和资源",
+    "year": "2025",
+    "deductedProfitYoY": 305,
+    "debtToAssets": 31.8839
+  },
+  "600111.SH": {
+    "code": "600111.SH",
+    "name": "北方稀土",
+    "year": "2025",
+    "deductedProfitYoY": 124.15,
+    "debtToAssets": 35.8851
+  },
+  "600549.SH": {
+    "code": "600549.SH",
+    "name": "厦门钨业",
+    "year": "2025",
+    "deductedProfitYoY": 20.27,
+    "debtToAssets": 52.4086
+  },
+  "688778.SH": {
+    "code": "688778.SH",
+    "name": "厦钨新能",
+    "year": "2025",
+    "deductedProfitYoY": 52.47,
+    "debtToAssets": 56.2919
+  },
+  "000930.SZ": {
+    "code": "000930.SZ",
+    "name": "中粮科技",
+    "year": "2025",
+    "deductedProfitYoY": 53.05,
+    "debtToAssets": 34.3116
+  },
+  "002237.SZ": {
+    "code": "002237.SZ",
+    "name": "恒邦股份",
+    "year": "2025",
+    "deductedProfitYoY": 51.9,
+    "debtToAssets": 64.0031
+  }
+}

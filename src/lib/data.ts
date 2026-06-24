@@ -1,5 +1,5 @@
-import type { AppData, Company, DivergenceSignal, CorrelationData, PricePoint, ValuationData } from "../types";
-import { calculateCorrelation, calculateReturns, calculateSlidingCorrelation } from "./divergence-calculator";
+import type { AppData, Company, DivergenceSignal, CorrelationData, PricePoint, ValuationData, FinancialData } from "../types";
+import { calculateCorrelation, calculateReturns, detectDivergence } from "./divergence-calculator";
 
 interface FetchOptions {
   cacheBust?: string;
@@ -98,47 +98,25 @@ function calculateCompanyDivergence(
 
     const { alignedStock, alignedCommodity, dates } = alignPriceSeries(stockPrices, commodityPriceSeries);
 
-    if (alignedStock.length < 60) continue;
+    // 只取最近一年的数据（52周）
+    const recentAlignedStock = alignedStock.slice(-52);
+    const recentAlignedCommodity = alignedCommodity.slice(-52);
+    const recentDates = dates.slice(-52);
 
-    const stockReturns = calculateReturns(alignedStock);
-    const commodityReturns = calculateReturns(alignedCommodity);
+    if (recentAlignedStock.length < 52) continue;
 
-    const windowSize = Math.min(60, alignedStock.length - 1);
-    const stockCorrelations = calculateSlidingCorrelation(stockReturns, commodityReturns, windowSize);
+    // 使用 detectDivergence 函数检测背离
+    const companySignals = detectDivergence(recentAlignedStock, recentAlignedCommodity, recentDates);
 
-    for (let i = windowSize; i < stockReturns.length; i++) {
-      const correlation = stockCorrelations[i - windowSize] ?? 0;
-
-      const stockCumReturn = stockReturns.slice(i - windowSize, i).reduce((a, b) => a + b, 0);
-      const commodityCumReturn = commodityReturns.slice(i - windowSize, i).reduce((a, b) => a + b, 0);
-
-      const divergenceThreshold = 0.3;
-      const returnThreshold = 0.05;
-
-      if (
-        Math.abs(correlation) < divergenceThreshold &&
-        stockCumReturn * commodityCumReturn < 0 &&
-        Math.abs(stockCumReturn) > returnThreshold &&
-        Math.abs(commodityCumReturn) > returnThreshold
-      ) {
-        const divergenceType = stockCumReturn > 0 ? "negative" : "positive";
-        const divergenceScore = Math.abs(stockCumReturn - commodityCumReturn);
-
-        signals.push({
-          code: company.code,
-          name: company.name,
-          productName: product.productName,
-          commodityName: product.commodityName,
-          divergenceType,
-          divergenceScore,
-          correlation,
-          stockChange: stockCumReturn,
-          commodityChange: commodityCumReturn,
-          startDate: dates[i - windowSize] ?? "",
-          endDate: dates[i] ?? "",
-          signalStrength: divergenceScore > 0.2 ? "strong" : divergenceScore > 0.1 ? "medium" : "weak",
-        });
-      }
+    // 添加公司信息
+    for (const signal of companySignals) {
+      signals.push({
+        ...signal,
+        code: company.code,
+        name: company.name,
+        productName: product.productName,
+        commodityName: product.commodityName,
+      });
     }
   }
 
@@ -199,11 +177,12 @@ function calculateCompanyCorrelation(
 }
 
 export async function loadAppData(options: FetchOptions = {}): Promise<AppData> {
-  const [companies, commodityPrices, stockPrices, valuationData] = await Promise.all([
+  const [companies, commodityPrices, stockPrices, valuationData, financialData] = await Promise.all([
     fetchOptionalJson<Company[]>("companies.json", [], options),
     fetchOptionalJson<Record<string, PricePoint[]>>("commodity-prices.json", {}, options),
     fetchOptionalJson<Record<string, PricePoint[]>>("stock-prices.json", {}, options),
     fetchOptionalJson<Record<string, ValuationData>>("valuation-data.json", {}, options),
+    fetchOptionalJson<Record<string, FinancialData>>("financial-data.json", {}, options),
   ]);
 
   const allSignals: DivergenceSignal[] = [];
@@ -232,5 +211,6 @@ export async function loadAppData(options: FetchOptions = {}): Promise<AppData> 
     commodityPrices,
     stockPrices,
     valuationData,
+    financialData,
   };
 }

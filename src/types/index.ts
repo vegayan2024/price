@@ -65,6 +65,15 @@ export interface ValuationData {
   low20DurationYears: number;
 }
 
+/** 财务数据 */
+export interface FinancialData {
+  code: string;
+  name: string;
+  year: string | null;
+  deductedProfitYoY: number | null;
+  debtToAssets: number | null;
+}
+
 /** 应用数据 */
 export interface AppData {
   companies: Company[];
@@ -73,6 +82,7 @@ export interface AppData {
   commodityPrices: Record<string, PricePoint[]>;
   stockPrices: Record<string, PricePoint[]>;
   valuationData: Record<string, ValuationData>;
+  financialData: Record<string, FinancialData>;
 }
 
 /** 主题模式 */

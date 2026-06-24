@@ -78,67 +78,67 @@ export function calculateSlidingCorrelation(
 }
 
 /**
- * 检测背离信号
+ * 检测背离信号（只取最近一年数据）
  * @param stockPrices 股票价格序列
  * @param commodityPrices 商品价格序列
  * @param dates 日期序列
- * @param windowSize 检测窗口大小
+ * @param windowSize 检测窗口大小（默认52周=1年）
  * @returns 背离信号数组
  */
 export function detectDivergence(
   stockPrices: number[],
   commodityPrices: number[],
   dates: string[],
-  windowSize: number = 60,
+  windowSize: number = 52,
 ): DivergenceSignal[] {
   const signals: DivergenceSignal[] = [];
   const n = Math.min(stockPrices.length, commodityPrices.length);
 
   if (n < windowSize) return signals;
 
+  // 只取最近一年的数据
+  const recentStockPrices = stockPrices.slice(-windowSize);
+  const recentCommodityPrices = commodityPrices.slice(-windowSize);
+  const recentDates = dates.slice(-windowSize);
+
   // 计算收益率
-  const stockReturns = calculateReturns(stockPrices);
-  const commodityReturns = calculateReturns(commodityPrices);
+  const stockReturns = calculateReturns(recentStockPrices);
+  const commodityReturns = calculateReturns(recentCommodityPrices);
 
-  // 计算滑动窗口相关性
-  const stockCorrelations = calculateSlidingCorrelation(stockReturns, commodityReturns, windowSize);
+  // 计算累计收益（最近一年）
+  const stockCumReturn = stockReturns.reduce((a, b) => a + b, 0);
+  const commodityCumReturn = commodityReturns.reduce((a, b) => a + b, 0);
 
-  // 检测背离
-  for (let i = windowSize; i < n; i++) {
-    const correlation = stockCorrelations[i - windowSize] ?? 0;
+  // 计算相关性
+  const correlation = calculateCorrelation(stockReturns, commodityReturns);
 
-    // 计算窗口内的累计收益
-    const stockCumReturn = stockReturns.slice(i - windowSize, i).reduce((a, b) => a + b, 0);
-    const commodityCumReturn = commodityReturns.slice(i - windowSize, i).reduce((a, b) => a + b, 0);
+  // 背离条件：相关性较低且方向相反
+  const divergenceThreshold = 0.3;
+  const returnThreshold = 0.10;
 
-    // 背离条件：相关性较低且方向相反
-    const divergenceThreshold = 0.3;
-    const returnThreshold = 0.10;
+  if (
+    Math.abs(correlation) < divergenceThreshold &&
+    stockCumReturn * commodityCumReturn < 0 &&
+    Math.abs(stockCumReturn) > returnThreshold &&
+    Math.abs(commodityCumReturn) > returnThreshold
+  ) {
+    const divergenceType = stockCumReturn > 0 ? "negative" : "positive";
+    const divergenceScore = Math.abs(stockCumReturn - commodityCumReturn);
 
-    if (
-      Math.abs(correlation) < divergenceThreshold &&
-      stockCumReturn * commodityCumReturn < 0 &&
-      Math.abs(stockCumReturn) > returnThreshold &&
-      Math.abs(commodityCumReturn) > returnThreshold
-    ) {
-      const divergenceType = stockCumReturn > 0 ? "negative" : "positive";
-      const divergenceScore = Math.abs(stockCumReturn - commodityCumReturn);
-
-      signals.push({
-        code: "",
-        name: "",
-        productName: "",
-        commodityName: "",
-        divergenceType,
-        divergenceScore,
-        correlation,
-        stockChange: stockCumReturn,
-        commodityChange: commodityCumReturn,
-        startDate: dates[i - windowSize] ?? "",
-        endDate: dates[i] ?? "",
-        signalStrength: divergenceScore > 0.3 ? "strong" : divergenceScore > 0.2 ? "medium" : "weak",
-      });
-    }
+    signals.push({
+      code: "",
+      name: "",
+      productName: "",
+      commodityName: "",
+      divergenceType,
+      divergenceScore,
+      correlation,
+      stockChange: stockCumReturn,
+      commodityChange: commodityCumReturn,
+      startDate: recentDates[0] ?? "",
+      endDate: recentDates[recentDates.length - 1] ?? "",
+      signalStrength: divergenceScore > 0.3 ? "strong" : divergenceScore > 0.2 ? "medium" : "weak",
+    });
   }
 
   return signals;

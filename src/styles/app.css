@@ -245,7 +245,7 @@
 
 .table-header {
   display: grid;
-  grid-template-columns: 2fr 80px 100px 100px 100px 100px 40px;
+  grid-template-columns: 2fr 80px 100px 80px 100px 100px 100px 80px 40px;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
   background: var(--bg-raised);
@@ -259,7 +259,7 @@
 
 .table-row {
   display: grid;
-  grid-template-columns: 2fr 80px 100px 100px 100px 100px 40px;
+  grid-template-columns: 2fr 80px 100px 80px 100px 100px 100px 80px 40px;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
   border-bottom: 1px solid var(--border);
@@ -327,6 +327,16 @@
 .badge-duration {
   background: var(--brand-soft);
   color: var(--brand);
+}
+
+.badge-profit {
+  background: var(--fall-soft);
+  color: var(--fall);
+}
+
+.badge-debt {
+  background: var(--info-soft);
+  color: var(--info);
 }
 
 .expand-icon {
