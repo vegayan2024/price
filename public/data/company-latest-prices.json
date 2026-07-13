@@ -1,0 +1,2038 @@
+{
+  "metadata": {
+    "generatedAt": "2026-07-13T18:09:59.896799",
+    "cjSource": "cj-chemical-prices-20260705.xlsx",
+    "xyzqSource": "xyzq-chemical-prices-20260705.xlsx",
+    "totalCompanies": 69,
+    "totalProducts": 206,
+    "matchedProducts": 141,
+    "matchRate": 68.4
+  },
+  "companies": [
+    {
+      "code": "000554.SZ",
+      "name": "泰山石油",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "汽油",
+          "commodityKey": "cj:price:92#汽油",
+          "latestPrice": 9673.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "柴油",
+          "commodityKey": "cj:price:0#柴油",
+          "latestPrice": 8085.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "液化气",
+          "commodityKey": "cj:price:液化气",
+          "latestPrice": 5600.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "000731.SZ",
+      "name": "四川美丰",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "尿素",
+          "commodityKey": "cj:price:尿素(华东)",
+          "latestPrice": 1790.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "复合肥",
+          "commodityKey": "cj:price:复合肥",
+          "latestPrice": 3000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "三聚氰胺",
+          "commodityKey": "cj:price:三聚氰胺",
+          "latestPrice": 5550.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "000792.SZ",
+      "name": "盐湖股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "氯化钾",
+          "commodityKey": "cj:price:氯化钾",
+          "latestPrice": 3100.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "碳酸锂",
+          "commodityKey": "cj:price:碳酸锂",
+          "latestPrice": 160000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "纯碱",
+          "commodityKey": "cj:price:轻质纯碱（华东）",
+          "latestPrice": 1050.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "000819.SZ",
+      "name": "岳阳兴长",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "聚丙烯",
+          "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
+          "latestPrice": 9300.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "MTBE",
+          "commodityKey": "cj:price:MTBE",
+          "latestPrice": 5150.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "液化气",
+          "commodityKey": "cj:price:液化气",
+          "latestPrice": 5600.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "000830.SZ",
+      "name": "鲁西化工",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "尿素",
+          "commodityKey": "cj:price:尿素（华鲁恒升小颗粒）",
+          "latestPrice": 1750.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "复合肥",
+          "commodityKey": "xyzq:price:复合肥(45%CL,湖北)",
+          "latestPrice": 3000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "000930.SZ",
+      "name": "中粮科技",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "淀粉糖",
+          "commodityKey": "cj:price:葡萄糖",
+          "latestPrice": 3095.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "味精",
+          "commodityKey": "cj:price:味精",
+          "latestPrice": 7183.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "氨基酸",
+          "commodityKey": "cj:price:赖氨酸",
+          "latestPrice": 6.5,
+          "unit": "元/千克",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "000990.SZ",
+      "name": "诚志股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "甲醇",
+          "commodityKey": "cj:price:甲醇（长三角）",
+          "latestPrice": 2525.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "聚烯烃",
+          "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
+          "latestPrice": 9300.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "清洁能源",
+          "commodityKey": "cj:price:LNG",
+          "latestPrice": 12.3591,
+          "unit": "美元/MMBtu",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002092.SZ",
+      "name": "中泰化学",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "PVC",
+          "commodityKey": "cj:price:PVC（华东电石法）",
+          "latestPrice": 4355.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "烧碱",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "粘胶短纤",
+          "commodityKey": "cj:price:粘胶短纤（华东）",
+          "latestPrice": 14150.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002100.SZ",
+      "name": "天康生物",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "饲料",
+          "commodityKey": "cj:price:豆粕",
+          "latestPrice": 2917.11,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "生猪",
+          "commodityKey": "cj:price:生猪",
+          "latestPrice": 12255.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "兽药",
+          "commodityKey": "cj:price:VE",
+          "latestPrice": 76.0,
+          "unit": "元/千克",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002136.SZ",
+      "name": "安纳达",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "钛白粉",
+          "commodityKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）",
+          "latestPrice": 14000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "磷酸铁的生产",
+          "commodityKey": "xyzq:price:磷酸铁",
+          "latestPrice": 14900.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "销售",
+          "commodityKey": "unknown:销售",
+          "latestPrice": null,
+          "status": "unknown"
+        }
+      ]
+    },
+    {
+      "code": "002258.SZ",
+      "name": "利尔化学",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "草铵膦",
+          "commodityKey": "cj:price:草铵膦",
+          "latestPrice": 48000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "氯氟吡氧乙酸",
+          "commodityKey": "cj:price:使它隆",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "毒莠定",
+          "commodityKey": "cj:price:毒莠定",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "002408.SZ",
+      "name": "齐翔腾达",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "甲乙酮",
+          "commodityKey": "cj:price:丁酮（华东）",
+          "latestPrice": 6550.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "顺酐",
+          "commodityKey": "cj:price:顺酐",
+          "latestPrice": 6350.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "丁二烯",
+          "commodityKey": "cj:price:丁二烯（上海石化）",
+          "latestPrice": 8625.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002469.SZ",
+      "name": "三维化学",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "草甘膦",
+          "commodityKey": "cj:price:草甘膦",
+          "latestPrice": 26500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "敌草快",
+          "commodityKey": "cj:price:敌草快",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "有机硅",
+          "commodityKey": "cj:price:DMC",
+          "latestPrice": 14000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002493.SZ",
+      "name": "荣盛石化",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "PTA",
+          "commodityKey": "cj:price:PTA（华东）",
+          "latestPrice": 5645.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "聚酯",
+          "commodityKey": "cj:price:涤纶POY（华东）",
+          "latestPrice": 8000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "PX",
+          "commodityKey": "cj:price:对二甲苯（PX）",
+          "latestPrice": 7900.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002597.SZ",
+      "name": "金禾实业",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "甜味剂",
+          "commodityKey": "cj:price:安赛蜜",
+          "latestPrice": 3.6,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "三氯蔗糖",
+          "commodityKey": "cj:price:三氯蔗糖",
+          "latestPrice": 10.0,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "甲乙基麦芽酚",
+          "commodityKey": "cj:price:乙基麦芽酚",
+          "latestPrice": 7.8,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002637.SZ",
+      "name": "赞宇科技",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "表面活性剂",
+          "commodityKey": "cj:price:AES",
+          "latestPrice": 10318.0,
+          "status": "matched",
+          "unit": "元/吨",
+          "source": "wind"
+        },
+        {
+          "productName": "油脂化工",
+          "commodityKey": "cj:price:硬脂酸",
+          "latestPrice": 9300.0,
+          "status": "matched",
+          "unit": "元/吨",
+          "source": "wind"
+        },
+        {
+          "productName": "磺酸",
+          "commodityKey": "cj:price:磺酸",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "002648.SZ",
+      "name": "卫星化学",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "丙烯酸",
+          "commodityKey": "cj:price:丙烯酸",
+          "latestPrice": 6200.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "丙烯酸酯",
+          "commodityKey": "cj:price:丙烯酸丁酯",
+          "latestPrice": 6800.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "C3产品",
+          "commodityKey": "cj:price:丙烯（汇丰石化）",
+          "latestPrice": 7635.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002748.SZ",
+      "name": "世龙实业",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "烧碱",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "液氯",
+          "commodityKey": "cj:price:液氯（华东）",
+          "latestPrice": -150.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "双氧水",
+          "commodityKey": "cj:price:双氧水",
+          "latestPrice": 650.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "300758.SZ",
+      "name": "七彩化学",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "有机颜料",
+          "commodityKey": "cj:price:永固紫",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "高性能材料",
+          "commodityKey": "cj:price:聚氨酯",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "中间体",
+          "commodityKey": "cj:price:色酚",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "300927.SZ",
+      "name": "江天化学",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "甲醛",
+          "commodityKey": "cj:price:甲醛（长三角）",
+          "latestPrice": 1450.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "多聚甲醛",
+          "commodityKey": "cj:price:多聚甲醛",
+          "latestPrice": 1450.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "氯化物",
+          "commodityKey": "cj:price:三氯甲醛",
+          "latestPrice": 1450.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600028.SH",
+      "name": "中国石化",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "原油",
+          "commodityKey": "lme:price:WTI原油",
+          "latestPrice": 68.69,
+          "unit": "美元/桶",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "汽油",
+          "commodityKey": "cj:price:92#汽油",
+          "latestPrice": 9673.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "柴油",
+          "commodityKey": "cj:price:0#柴油",
+          "latestPrice": 8085.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600160.SH",
+      "name": "巨化股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "制冷剂",
+          "commodityKey": "cj:price:R32",
+          "latestPrice": 64000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "含氟聚合物",
+          "commodityKey": "cj:price:PVDF",
+          "latestPrice": 62000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "基础化工",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600230.SH",
+      "name": "沧州大化",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "TDI",
+          "commodityKey": "cj:price:TDI（华东）",
+          "latestPrice": 25750.0,
+          "unit": "",
+          "source": "xyzq_detail",
+          "status": "matched"
+        },
+        {
+          "productName": "聚碳酸酯",
+          "commodityKey": "cj:price:PC",
+          "latestPrice": 15950.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "烧碱",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600298.SH",
+      "name": "安琪酵母",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "蛋氨酸",
+          "commodityKey": "cj:price:蛋氨酸",
+          "latestPrice": 33.5,
+          "unit": "元/千克",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "维生素A",
+          "commodityKey": "cj:price:VA",
+          "latestPrice": 65.5,
+          "unit": "元/千克",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "维生素E",
+          "commodityKey": "cj:price:VE",
+          "latestPrice": 76.0,
+          "unit": "元/千克",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600299.SH",
+      "name": "安迪苏",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "蛋氨酸",
+          "commodityKey": "cj:price:蛋氨酸",
+          "latestPrice": 33.5,
+          "unit": "元/千克",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "维生素A",
+          "commodityKey": "cj:price:VA",
+          "latestPrice": 65.5,
+          "unit": "元/千克",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "维生素E",
+          "commodityKey": "cj:price:VE",
+          "latestPrice": 76.0,
+          "unit": "元/千克",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600328.SH",
+      "name": "中盐化工",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "纯碱",
+          "commodityKey": "cj:price:轻质纯碱（华东）",
+          "latestPrice": 1050.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "烧碱",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "PVC",
+          "commodityKey": "cj:price:PVC（华东电石法）",
+          "latestPrice": 4355.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600352.SH",
+      "name": "浙江龙盛",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "染料",
+          "commodityKey": "cj:price:分散染料",
+          "latestPrice": 23.0,
+          "unit": "元/千克",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "助剂",
+          "commodityKey": "cj:price:还原剂",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "中间体",
+          "commodityKey": "cj:price:间苯二胺",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "600378.SH",
+      "name": "昊华科技",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "制冷剂",
+          "commodityKey": "cj:price:R32",
+          "latestPrice": 64000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "含氟聚合物",
+          "commodityKey": "cj:price:PTFE",
+          "latestPrice": 790.0,
+          "unit": "美元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "电子特气",
+          "commodityKey": "cj:price:六氟化钨",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "600409.SH",
+      "name": "三友化工",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "纯碱",
+          "commodityKey": "cj:price:轻质纯碱（华东）",
+          "latestPrice": 1050.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "粘胶短纤",
+          "commodityKey": "cj:price:粘胶短纤（华东）",
+          "latestPrice": 14150.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "PVC",
+          "commodityKey": "cj:price:PVC（华东电石法）",
+          "latestPrice": 4355.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600426.SH",
+      "name": "华鲁恒升",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "醋酸",
+          "commodityKey": "cj:price:醋酸（华东）",
+          "latestPrice": 3020.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "DMF",
+          "commodityKey": "cj:price:DMF（华东）",
+          "latestPrice": 4550.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "己二酸",
+          "commodityKey": "cj:price:己二酸（华东）",
+          "latestPrice": 7500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600486.SH",
+      "name": "扬农化工",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "草甘膦",
+          "commodityKey": "cj:price:草甘膦",
+          "latestPrice": 26500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "菊酯",
+          "commodityKey": "cj:price:高效氯氟氰菊酯",
+          "latestPrice": 106000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "杀菌剂",
+          "commodityKey": "cj:price:多菌灵",
+          "latestPrice": 35500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600499.SH",
+      "name": "科达制造",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "电解铜箔",
+          "commodityKey": "lme:price:铜",
+          "latestPrice": 12.56,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "电线电缆",
+          "commodityKey": "cj:price:铜杆",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "高分子材料",
+          "commodityKey": "cj:price:聚烯烃",
+          "latestPrice": 7300.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600500.SH",
+      "name": "中化国际",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "环氧树脂",
+          "commodityKey": "cj:price:环氧树脂",
+          "latestPrice": 13500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "橡胶助剂",
+          "commodityKey": "cj:price:防老剂",
+          "latestPrice": 17750.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "工程塑料",
+          "commodityKey": "cj:price:PA66",
+          "latestPrice": 17500.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600746.SH",
+      "name": "江苏索普",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "醋酸",
+          "commodityKey": "cj:price:醋酸（华东）",
+          "latestPrice": 3020.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "氯碱",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "硫酸",
+          "commodityKey": "cj:price:硫酸",
+          "latestPrice": 2750.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600866.SH",
+      "name": "星湖科技",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "味精",
+          "commodityKey": "cj:price:味精",
+          "latestPrice": 7183.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "核苷酸",
+          "commodityKey": "cj:price:I+G",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "原料药",
+          "commodityKey": "cj:price:肌苷",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "600955.SH",
+      "name": "维远股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "苯酚",
+          "commodityKey": "cj:price:苯酚(华东)",
+          "latestPrice": 7675.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "丙酮",
+          "commodityKey": "cj:price:丙酮(华东)",
+          "latestPrice": 4725.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "双酚A",
+          "commodityKey": "cj:price:双酚A",
+          "latestPrice": 8275.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "601117.SH",
+      "name": "中国化学",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "工程服务",
+          "commodityKey": "cj:price:MDI",
+          "latestPrice": 16300.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "化工品贸易",
+          "commodityKey": "cj:price:轻质纯碱（华东）",
+          "latestPrice": 1050.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "设计咨询",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "601118.SH",
+      "name": "海南橡胶",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "天然橡胶",
+          "commodityKey": "cj:price:天然橡胶（上海地区）",
+          "latestPrice": 16786.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "轮胎",
+          "commodityKey": "cj:price:全钢胎",
+          "latestPrice": 39.95,
+          "unit": "天",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "乳胶",
+          "commodityKey": "cj:price:浓缩乳胶",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "601216.SH",
+      "name": "君正集团",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "PVC",
+          "commodityKey": "cj:price:PVC（华东电石法）",
+          "latestPrice": 4355.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "烧碱",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "电石",
+          "commodityKey": "cj:price:电石（华东）",
+          "latestPrice": 2612.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "601233.SH",
+      "name": "桐昆股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "涤纶长丝",
+          "commodityKey": "cj:price:涤纶POY（华东）",
+          "latestPrice": 8000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "PTA",
+          "commodityKey": "cj:price:PTA（华东）",
+          "latestPrice": 5645.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "聚酯切片",
+          "commodityKey": "cj:price:PET切片（华东）",
+          "latestPrice": 6806.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "601678.SH",
+      "name": "滨化股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "烧碱",
+          "commodityKey": "cj:price:32%隔膜烧碱（华东）",
+          "latestPrice": 640.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "环氧丙烷",
+          "commodityKey": "cj:price:环氧丙烷（华东）",
+          "latestPrice": 7950.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "三氯乙烯",
+          "commodityKey": "cj:price:三氯乙烯",
+          "latestPrice": 5900.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "601857.SH",
+      "name": "中国石油",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "原油",
+          "commodityKey": "lme:price:WTI原油",
+          "latestPrice": 68.69,
+          "unit": "美元/桶",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "天然气",
+          "commodityKey": "cj:price:LNG",
+          "latestPrice": 12.3591,
+          "unit": "美元/MMBtu",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "成品油",
+          "commodityKey": "cj:price:92#汽油",
+          "latestPrice": 9673.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "603077.SH",
+      "name": "和邦生物",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "维生素E",
+          "commodityKey": "cj:price:VE",
+          "latestPrice": 76.0,
+          "unit": "元/千克",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "香精香料",
+          "commodityKey": "cj:price:薄荷醇",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "新材料",
+          "commodityKey": "cj:price:PPS",
+          "latestPrice": 9300.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "603599.SH",
+      "name": "广信股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "多菌灵",
+          "commodityKey": "cj:price:多菌灵",
+          "latestPrice": 35500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "甲基硫菌灵",
+          "commodityKey": "cj:price:甲基硫菌灵",
+          "latestPrice": 31000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "敌草隆",
+          "commodityKey": "cj:price:敌草隆",
+          "latestPrice": 42500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "603968.SH",
+      "name": "醋化股份",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "热力",
+          "commodityKey": "cj:price:动力煤",
+          "latestPrice": 712.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "天然气",
+          "commodityKey": "cj:price:LNG",
+          "latestPrice": 12.3591,
+          "unit": "美元/MMBtu",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "生物质",
+          "commodityKey": "cj:price:木屑颗粒",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "605399.SH",
+      "name": "晨光新材",
+      "group": "chemical",
+      "products": [
+        {
+          "productName": "硅烷偶联剂",
+          "commodityKey": "cj:price:KH-550",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "气相白炭黑",
+          "commodityKey": "cj:price:气相白炭黑",
+          "latestPrice": 7400.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        },
+        {
+          "productName": "功能性硅橡胶",
+          "commodityKey": "cj:price:107胶",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "000629.SZ",
+      "name": "钒钛股份",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "钒制品",
+          "commodityKey": "cj:price:五氧化二钒",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "钛白粉",
+          "commodityKey": "cj:price:钛白粉(金红石)",
+          "latestPrice": 16700.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "钛精矿",
+          "commodityKey": "cj:price:钛精矿",
+          "latestPrice": 1390.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "000657.SZ",
+      "name": "中钨高新",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "钨",
+          "commodityKey": "cj:price:仲钨酸铵",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "硬质合金",
+          "commodityKey": "cj:price:碳化钨",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "钼",
+          "commodityKey": "cj:price:钼精矿",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "000878.SZ",
+      "name": "云南铜业",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "铜",
+          "commodityKey": "lme:price:铜",
+          "latestPrice": 12.56,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "黄金",
+          "commodityKey": "lme:price:黄金",
+          "latestPrice": 4164.15,
+          "unit": "美元/盎司",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "白银",
+          "commodityKey": "lme:price:白银",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "000923.SZ",
+      "name": "河钢资源",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "铁矿石",
+          "commodityKey": "lme:price:铁矿石",
+          "latestPrice": 931.07,
+          "status": "matched",
+          "unit": "元/湿吨",
+          "source": "wind"
+        },
+        {
+          "productName": "钒钛",
+          "commodityKey": "cj:price:五氧化二钒",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "磁铁矿",
+          "commodityKey": "cj:price:铁精粉",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "000960.SZ",
+      "name": "锡业股份",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "锡",
+          "commodityKey": "lme:price:锡",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "锌",
+          "commodityKey": "lme:price:锌",
+          "latestPrice": 30500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "铟",
+          "commodityKey": "cj:price:金属铟",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "000962.SZ",
+      "name": "东方钽业",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "钽",
+          "commodityKey": "lme:price:钽",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "铌",
+          "commodityKey": "lme:price:铌",
+          "latestPrice": 653.3,
+          "status": "matched",
+          "unit": "元/千克",
+          "source": "wind"
+        },
+        {
+          "productName": "铍",
+          "commodityKey": "cj:price:金属铍",
+          "latestPrice": 8328.0,
+          "status": "matched",
+          "unit": "元/千克",
+          "source": "wind"
+        }
+      ]
+    },
+    {
+      "code": "002057.SZ",
+      "name": "中钢天源",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "四氧化三锰",
+          "commodityKey": "cj:price:四氧化三锰",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "稀土",
+          "commodityKey": "cj:price:氧化镨钕",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "永磁材料",
+          "commodityKey": "cj:price:N35钕铁硼",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "002237.SZ",
+      "name": "恒邦股份",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "黄金",
+          "commodityKey": "lme:price:黄金",
+          "latestPrice": 4164.15,
+          "unit": "美元/盎司",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "白银",
+          "commodityKey": "lme:price:白银",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "电解铜",
+          "commodityKey": "lme:price:铜",
+          "latestPrice": 12.56,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600063.SH",
+      "name": "皖维高新",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "PVA",
+          "commodityKey": "cj:price:聚乙烯醇PVA",
+          "latestPrice": 11900.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "醋酸乙烯",
+          "commodityKey": "cj:price:醋酸乙烯（华东）",
+          "latestPrice": 5850.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "水泥",
+          "commodityKey": "cj:price:P.O42.5水泥",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "600111.SH",
+      "name": "北方稀土",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "稀土",
+          "commodityKey": "cj:price:氧化镨钕",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "稀土永磁",
+          "commodityKey": "cj:price:N35钕铁硼",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "抛光粉",
+          "commodityKey": "cj:price:氧化铈",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "600301.SH",
+      "name": "华锡有色",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "锡",
+          "commodityKey": "lme:price:锡",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "锌",
+          "commodityKey": "lme:price:锌",
+          "latestPrice": 30500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "锑",
+          "commodityKey": "cj:price:锑锭",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "600392.SH",
+      "name": "盛和资源",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "稀土",
+          "commodityKey": "cj:price:氧化镨钕",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "锆",
+          "commodityKey": "cj:price:氧氯化锆",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "钛",
+          "commodityKey": "cj:price:钛精矿",
+          "latestPrice": 1390.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600459.SH",
+      "name": "贵研铂业",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "铂",
+          "commodityKey": "lme:price:铂",
+          "latestPrice": 419.5,
+          "status": "matched",
+          "unit": "元/克",
+          "source": "wind"
+        },
+        {
+          "productName": "钯",
+          "commodityKey": "lme:price:钯",
+          "latestPrice": 326.6,
+          "status": "matched",
+          "unit": "元/克",
+          "source": "wind"
+        },
+        {
+          "productName": "铑",
+          "commodityKey": "lme:price:铑",
+          "latestPrice": 2097.9,
+          "status": "matched",
+          "unit": "元/克",
+          "source": "wind"
+        }
+      ]
+    },
+    {
+      "code": "600549.SH",
+      "name": "厦门钨业",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "钨",
+          "commodityKey": "cj:price:仲钨酸铵",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "稀土",
+          "commodityKey": "cj:price:氧化镨钕",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "钴",
+          "commodityKey": "lme:price:钴",
+          "latestPrice": 37.85,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "600961.SH",
+      "name": "株冶集团",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "锌",
+          "commodityKey": "lme:price:锌",
+          "latestPrice": 30500.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "铟",
+          "commodityKey": "cj:price:金属铟",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "金银",
+          "commodityKey": "lme:price:黄金",
+          "latestPrice": 4164.15,
+          "unit": "美元/盎司",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "601061.SH",
+      "name": "中信金属",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "铌",
+          "commodityKey": "lme:price:铌",
+          "latestPrice": 653.3,
+          "status": "matched",
+          "unit": "元/千克",
+          "source": "wind"
+        },
+        {
+          "productName": "铜",
+          "commodityKey": "lme:price:铜",
+          "latestPrice": 12.56,
+          "unit": "万元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "铁矿石",
+          "commodityKey": "lme:price:铁矿石",
+          "latestPrice": 931.07,
+          "status": "matched",
+          "unit": "元/湿吨",
+          "source": "wind"
+        }
+      ]
+    },
+    {
+      "code": "601600.SH",
+      "name": "中国铝业",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "氧化铝",
+          "commodityKey": "lme:price:氧化铝",
+          "latestPrice": 3670.0,
+          "status": "matched",
+          "unit": "元/吨",
+          "source": "wind"
+        },
+        {
+          "productName": "原铝",
+          "commodityKey": "lme:price:铝",
+          "latestPrice": 14.0,
+          "unit": "元/平方米",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "镓",
+          "commodityKey": "cj:price:金属镓",
+          "latestPrice": 2066.0,
+          "status": "matched",
+          "unit": "元/千克",
+          "source": "wind"
+        }
+      ]
+    },
+    {
+      "code": "688778.SH",
+      "name": "厦钨新能",
+      "group": "mining",
+      "products": [
+        {
+          "productName": "钴酸锂",
+          "commodityKey": "cj:price:钴酸锂",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "三元材料",
+          "commodityKey": "cj:price:NCM811",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "磷酸铁锂",
+          "commodityKey": "cj:price:磷酸铁锂",
+          "latestPrice": 10100.0,
+          "unit": "元/吨",
+          "source": "cj",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "002096.SZ",
+      "name": "易普力",
+      "group": "explosive",
+      "products": [
+        {
+          "productName": "工业炸药",
+          "commodityKey": "cj:price:硝酸铵",
+          "latestPrice": 2000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "雷管",
+          "commodityKey": "cj:price:电子雷管",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "爆破服务",
+          "commodityKey": "cj:price:工业炸药",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "002226.SZ",
+      "name": "江南化工",
+      "group": "explosive",
+      "products": [
+        {
+          "productName": "工业炸药",
+          "commodityKey": "cj:price:硝酸铵",
+          "latestPrice": 2000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "雷管",
+          "commodityKey": "cj:price:电子雷管",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "风电",
+          "commodityKey": "cj:price:风电机组",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "002783.SZ",
+      "name": "凯龙股份",
+      "group": "explosive",
+      "products": [
+        {
+          "productName": "工业炸药",
+          "commodityKey": "cj:price:硝酸铵",
+          "latestPrice": 2000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "硝酸铵",
+          "commodityKey": "cj:price:硝酸铵",
+          "latestPrice": 2000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "复合肥",
+          "commodityKey": "cj:price:复合肥",
+          "latestPrice": 3000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "code": "603227.SH",
+      "name": "雪峰科技",
+      "group": "explosive",
+      "products": [
+        {
+          "productName": "工业炸药",
+          "commodityKey": "cj:price:硝酸铵",
+          "latestPrice": 2000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "硝酸铵",
+          "commodityKey": "cj:price:硝酸铵",
+          "latestPrice": 2000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "爆破服务",
+          "commodityKey": "cj:price:工业炸药",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    },
+    {
+      "code": "603977.SH",
+      "name": "国泰集团",
+      "group": "explosive",
+      "products": [
+        {
+          "productName": "工业炸药",
+          "commodityKey": "cj:price:硝酸铵",
+          "latestPrice": 2000.0,
+          "unit": "元/吨",
+          "source": "xyzq",
+          "status": "matched"
+        },
+        {
+          "productName": "电子雷管",
+          "commodityKey": "cj:price:电子雷管",
+          "latestPrice": null,
+          "status": "not_found"
+        },
+        {
+          "productName": "高氯酸钾",
+          "commodityKey": "cj:price:高氯酸钾",
+          "latestPrice": null,
+          "status": "not_found"
+        }
+      ]
+    }
+  ]
+}
