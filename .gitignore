@@ -4,3 +4,8 @@ dist
 *.local
 .env
 .env.local
+
+# Excel 数据文件
+data/sources/*.xlsx
+data/sources/*.xls
+data/sources/*.csv

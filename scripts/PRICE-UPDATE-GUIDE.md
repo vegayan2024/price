@@ -11,7 +11,7 @@
 将新的价格 Excel 文件放到以下目录：
 
 ```
-terminal/docs/data/sources/
+C:\个人文件夹\github\price\data\sources\
 ```
 
 支持的文件格式：
@@ -21,7 +21,7 @@ terminal/docs/data/sources/
 ### 2. 运行更新脚本
 
 ```bash
-cd C:\Users\vega_\Documents\GitHub\price
+cd C:\个人文件夹\github\price
 python scripts/update-prices-from-excel.py
 ```
 
@@ -85,12 +85,30 @@ KEY_TO_EXCEL = {
 | `public/data/price-table.json` | 价格速查表 |
 | `public/data/companies.json` | 公司产品映射配置 |
 
+## 目录结构
+
+```
+price/
+├── data/
+│   └── sources/           ← Excel 文件放这里
+│       ├── cj-chemical-prices-20260728.xlsx
+│       └── xyzq-chemical-prices-20260728.xlsx
+├── scripts/
+│   └── update-prices-from-excel.py
+└── public/
+    └── data/
+        ├── company-latest-prices.json
+        ├── price-table.json
+        └── commodity-prices.json
+```
+
 ## 定期更新流程
 
 1. 每周获取最新的 Excel 价格文件
-2. 放到 `terminal/docs/data/sources/` 目录
+2. 放到 `data/sources/` 目录
 3. 运行 `python scripts/update-prices-from-excel.py`
 4. 检查匹配率，如有新产品需补充映射
+5. 运行 `update-price.bat` 上传到 GitHub
 
 ## 注意事项
 

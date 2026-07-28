@@ -3,8 +3,8 @@
 化工产品价格更新脚本
 
 使用方法：
-1. 将新的 Excel 文件放到 terminal/docs/data/sources/ 目录
-2. 运行此脚本: python3 scripts/update-prices-from-excel.py
+1. 将新的 Excel 文件放到 data/sources/ 目录
+2. 运行此脚本: python scripts/update-prices-from-excel.py
 3. 脚本会自动找到最新的 Excel 文件，提取价格，更新数据
 
 支持的 Excel 文件格式：
@@ -39,7 +39,7 @@ except ImportError:
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
-SOURCES_DIR = os.path.join(PROJECT_DIR, "..", "terminal", "docs", "data", "sources")
+SOURCES_DIR = os.path.join(PROJECT_DIR, "data", "sources")
 OUTPUT_DIR = os.path.join(PROJECT_DIR, "public", "data")
 COMPANIES_FILE = os.path.join(OUTPUT_DIR, "companies.json")
 
