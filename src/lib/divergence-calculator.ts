@@ -1,4 +1,4 @@
-import type { PricePoint, DivergenceSignal } from "../types";
+import type { DivergenceSignal } from "../types";
 
 /**
  * 计算两个价格序列的 Pearson 相关系数

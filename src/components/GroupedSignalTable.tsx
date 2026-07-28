@@ -127,10 +127,6 @@ export default function GroupedSignalTable({
       {groupedSignals.map((company) => {
         const isExpanded = expandedCompanies.has(company.code);
         const mainType = company.signals[0]?.divergenceType ?? "";
-        const maxStrength = company.signals.reduce((max, s) => {
-          const order = { strong: 2, medium: 1, weak: 0 };
-          return order[s.signalStrength] > order[max] ? s.signalStrength : max;
-        }, "weak");
 
         return (
           <div key={company.code} className="company-group">

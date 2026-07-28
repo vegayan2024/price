@@ -23,7 +23,7 @@ export default function CorrelationHeatmap({ correlations }: CorrelationHeatmapP
 
   // 构建热力图数据
   const heatmapData: [number, number, number][] = [];
-  companies.forEach(([code, items], companyIndex) => {
+  companies.forEach(([_code, items], companyIndex) => {
     allCommodities.forEach((commodity, commodityIndex) => {
       const item = items.find((i) => i.commodityName === commodity);
       if (item) {

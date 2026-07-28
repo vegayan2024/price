@@ -1,5 +1,6 @@
 import type { AppData, Company, DivergenceSignal, CorrelationData, PricePoint, ValuationData, FinancialData } from "../types";
 import { calculateCorrelation, calculateReturns, detectDivergence } from "./divergence-calculator";
+import { lazyLoad, prefetch } from "./lazy-data";
 
 interface FetchOptions {
   cacheBust?: string;
@@ -23,24 +24,6 @@ async function fetchOptionalJson<T>(file: string, fallback: T, options: FetchOpt
     if (error instanceof Error && error.message.includes("404")) return fallback;
     throw error;
   }
-}
-
-/**
- * 从价格序列中提取数值数组
- * @param prices 价格点数组
- * @returns 数值数组
- */
-function extractValues(prices: PricePoint[]): number[] {
-  return prices.map((p) => p.value);
-}
-
-/**
- * 从价格序列中提取日期数组
- * @param prices 价格点数组
- * @returns 日期数组
- */
-function extractDates(prices: PricePoint[]): string[] {
-  return prices.map((p) => p.date);
 }
 
 /**
@@ -213,4 +196,59 @@ export async function loadAppData(options: FetchOptions = {}): Promise<AppData> 
     valuationData,
     financialData,
   };
+}
+
+/**
+ * 懒加载版本的应用数据加载
+ * 使用缓存机制避免重复加载大型数据文件
+ */
+export async function loadAppDataLazy(options: FetchOptions = {}): Promise<AppData> {
+  const cacheKey = options.cacheBust ?? 'default';
+
+  const [companies, commodityPrices, stockPrices, valuationData, financialData] = await Promise.all([
+    lazyLoad(`companies-${cacheKey}`, () => fetchOptionalJson<Company[]>("companies.json", [], options)),
+    lazyLoad(`commodity-prices-${cacheKey}`, () => fetchOptionalJson<Record<string, PricePoint[]>>("commodity-prices.json", {}, options)),
+    lazyLoad(`stock-prices-${cacheKey}`, () => fetchOptionalJson<Record<string, PricePoint[]>>("stock-prices.json", {}, options)),
+    lazyLoad(`valuation-data-${cacheKey}`, () => fetchOptionalJson<Record<string, ValuationData>>("valuation-data.json", {}, options)),
+    lazyLoad(`financial-data-${cacheKey}`, () => fetchOptionalJson<Record<string, FinancialData>>("financial-data.json", {}, options)),
+  ]);
+
+  const allSignals: DivergenceSignal[] = [];
+  const allCorrelations: CorrelationData[] = [];
+
+  for (const company of companies) {
+    const companyStockPrices = stockPrices[company.code];
+    if (!companyStockPrices || companyStockPrices.length === 0) continue;
+
+    const signals = calculateCompanyDivergence(company, companyStockPrices, commodityPrices);
+    allSignals.push(...signals);
+
+    const correlations = calculateCompanyCorrelation(company, companyStockPrices, commodityPrices);
+    allCorrelations.push(...correlations);
+  }
+
+  const sortedSignals = allSignals.sort((a, b) => {
+    const strengthOrder = { strong: 0, medium: 1, weak: 2 };
+    return strengthOrder[a.signalStrength] - strengthOrder[b.signalStrength];
+  });
+
+  return {
+    companies,
+    signals: sortedSignals,
+    correlations: allCorrelations,
+    commodityPrices,
+    stockPrices,
+    valuationData,
+    financialData,
+  };
+}
+
+/**
+ * 预加载常用数据
+ * 可在应用启动时调用，提前加载数据
+ */
+export function preloadAppData(): void {
+  prefetch('companies-default', () => fetchOptionalJson<Company[]>("companies.json", []));
+  prefetch('commodity-prices-default', () => fetchOptionalJson<Record<string, PricePoint[]>>("commodity-prices.json", {}));
+  prefetch('stock-prices-default', () => fetchOptionalJson<Record<string, PricePoint[]>>("stock-prices.json", {}));
 }
