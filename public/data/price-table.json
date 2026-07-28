@@ -539,6 +539,12 @@
     "unit": "美元/盎司",
     "source": "xyzq"
   },
+  "xyzq:price:锡": {
+    "productName": "锡",
+    "price": 60920.524326877654,
+    "unit": "",
+    "source": "wind"
+  },
   "xyzq:price:锌": {
     "productName": "锌",
     "price": 30500.0,
@@ -557,6 +563,30 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
+  "cj:price:氧化铈": {
+    "productName": "抛光粉",
+    "price": 2212.7420878601793,
+    "unit": "",
+    "source": "wind"
+  },
+  "xyzq:price:铂": {
+    "productName": "铂",
+    "price": 58.1601322626358,
+    "unit": "",
+    "source": "wind"
+  },
+  "xyzq:price:钯": {
+    "productName": "钯",
+    "price": 45.76051015588096,
+    "unit": "",
+    "source": "wind"
+  },
+  "xyzq:price:铑": {
+    "productName": "铑",
+    "price": 303.34789796882376,
+    "unit": "",
+    "source": "wind"
+  },
   "xyzq:price:钴": {
     "productName": "钴",
     "price": 37.85,
@@ -574,6 +604,12 @@
     "price": 14.0,
     "unit": "元/平方米",
     "source": "xyzq"
+  },
+  "xyzq:price:金属镓": {
+    "productName": "镓",
+    "price": 282.6818611242324,
+    "unit": "",
+    "source": "wind"
   },
   "xyzq:price:磷酸铁锂正极材料": {
     "productName": "磷酸铁锂",

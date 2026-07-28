@@ -158,6 +158,62 @@ def extract_xyzq_latest(filepath):
     return prices
 
 
+def extract_wind_latest(filepath):
+    """从 Wind Excel 提取最新价格"""
+    wb = openpyxl.load_workbook(filepath, data_only=True)
+    prices = {}
+
+    ws = wb.worksheets[0]
+    rows = list(ws.iter_rows(values_only=True))
+
+    if len(rows) < 6:
+        wb.close()
+        return prices
+
+    # 第2行是产品名称
+    product_names = rows[1]
+
+    # 找到最新日期的行（第1列是日期，从第6行开始是数据）
+    latest_row = None
+    latest_date = None
+
+    for row in rows[5:]:  # 从第6行开始
+        if row[0] is not None:
+            try:
+                # 尝试解析日期
+                if hasattr(row[0], 'date'):
+                    current_date = row[0]
+                else:
+                    current_date = datetime.strptime(str(row[0]), '%Y-%m-%d')
+
+                if latest_date is None or current_date > latest_date:
+                    latest_date = current_date
+                    latest_row = row
+            except (ValueError, TypeError):
+                pass
+
+    if latest_row is None:
+        # 如果找不到日期行，使用最后一行
+        latest_row = rows[-1]
+
+    for i, product in enumerate(product_names):
+        if product and i > 0:  # 跳过第一列（指标名称）
+            price_val = latest_row[i] if i < len(latest_row) else None
+            if price_val is not None:
+                try:
+                    price = float(price_val)
+                    if price > 0:
+                        prices[str(product)] = {
+                            "price": price,
+                            "source": "wind"
+                        }
+                except (ValueError, TypeError):
+                    pass
+
+    wb.close()
+    return prices
+
+
 # ============================================================
 # 产品名称匹配
 # ============================================================
@@ -372,6 +428,42 @@ KEY_TO_EXCEL = {
     # xyzq 特有
     "xyzq:price:复合肥(45%CL,湖北)": ["复合肥(45%CL,湖北)"],
     "xyzq:price:磷酸铁": ["磷酸铁"],
+
+    # ============================================================
+    # Wind 数据源映射 (2026-07-28 添加)
+    # ============================================================
+
+    # 稀土产品
+    "xyzq:price:氧化镨钕": ["中国:最低价:氧化镨钕(≥99%,Nd2O3 75%)", "氧化镨钕"],
+    "cj:price:氧化铈": ["中国:上海:价格:氧化铈(CeO2/TREO 99.0-99.5%)", "氧化铈"],
+
+    # 贵金属
+    "xyzq:price:铂": ["中国:价格:铂(99.95%)", "铂"],
+    "xyzq:price:钯": ["中国:价格:钯(99.95%)", "钯"],
+    "xyzq:price:铑": ["中国:价格:铑(99.95%)", "铑"],
+    "xyzq:price:白银": ["上海金交所:结算价:白银现货:Ag(T+D)", "白银"],
+
+    # 稀有金属
+    "xyzq:price:铌": ["中国:江西:市场价:氧化铌(99.99%,高纯光学玻璃级)", "铌"],
+    "xyzq:price:钽": ["中国:广东:市场价:钽锭(99.95%min)", "钽"],
+    "xyzq:price:金属镓": ["中国:平均价:镓(≥99%)", "镓"],
+    "xyzq:price:金属铍": ["中国:市场价:铍矿(10%)", "铍"],
+    "xyzq:price:锑锭": ["中国:出厂价:锑锭(1#)", "锑锭"],
+    "xyzq:price:锡": ["中国:平均价:锡(1#):有色市场", "锡"],
+    "xyzq:price:钼精矿": ["中国:平均价:钼精矿(45%-50%,国产)", "钼精矿"],
+
+    # 钨产品
+    "cj:price:碳化钨": ["中国:平均价:碳化钨(2-10um,国产)", "碳化钨"],
+
+    # 钢铁原料
+    "cj:price:铁精粉": ["中国:迁安:价格(干基含税):铁精粉(66%)", "铁精粉"],
+    "xyzq:price:铁矿石": ["中国北方:铁矿石价格指数(65%Fe,CFR)", "铁矿石"],
+
+    # 锂电材料
+    "cj:price:钴酸锂": ["中国:平均价:钴酸锂(≥60%,国产)", "钴酸锂"],
+
+    # 有色金属
+    "xyzq:price:氧化铝": ["中国:河南:平均价:氧化铝(一级)", "氧化铝"],
 }
 
 
@@ -437,12 +529,14 @@ def main():
     # 2. 找到最新文件
     cj_file = find_latest_file("cj-chemical-prices-*.xlsx")
     xyzq_file = find_latest_file("xyzq-chemical-prices-*.xlsx")
+    wind_file = find_latest_file("wind-prices-*.xlsx")
 
     print(f"\n数据源文件:")
     print(f"  CJ: {os.path.basename(cj_file) if cj_file else '未找到'}")
     print(f"  XYZQ: {os.path.basename(xyzq_file) if xyzq_file else '未找到'}")
+    print(f"  Wind: {os.path.basename(wind_file) if wind_file else '未找到'}")
 
-    if not cj_file and not xyzq_file:
+    if not cj_file and not xyzq_file and not wind_file:
         print("\n错误: 未找到任何价格 Excel 文件")
         return
 
@@ -460,6 +554,12 @@ def main():
         xyzq_prices = extract_xyzq_latest(xyzq_file)
         all_prices.update(xyzq_prices)
         print(f"  XYZQ 产品数: {len(xyzq_prices)}")
+
+    if wind_file:
+        print(f"\n读取 Wind 数据...")
+        wind_prices = extract_wind_latest(wind_file)
+        all_prices.update(wind_prices)
+        print(f"  Wind 产品数: {len(wind_prices)}")
 
     print(f"\n合并后总产品数: {len(all_prices)}")
 
