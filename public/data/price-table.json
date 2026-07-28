@@ -1,61 +1,61 @@
 {
-  "cj:price:92#汽油": {
+  "xyzq:price:中国92#汽油(镇海炼化)": {
     "productName": "汽油",
     "price": 9673.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:0#柴油": {
+  "xyzq:price:中国0#柴油(镇海炼化)": {
     "productName": "柴油",
     "price": 8085.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:液化气": {
+  "xyzq:price:液化气(华东)": {
     "productName": "液化气",
     "price": 5600.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:尿素(华东)": {
+  "xyzq:price:尿素(山东)": {
     "productName": "尿素",
     "price": 1790.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:复合肥": {
+  "xyzq:price:复合肥": {
     "productName": "复合肥",
     "price": 3000.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:三聚氰胺": {
+  "xyzq:price:三聚氰胺(四川)": {
     "productName": "三聚氰胺",
     "price": 5550.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:氯化钾": {
+  "xyzq:price:氯化钾(60%粉,青海挂牌)": {
     "productName": "氯化钾",
     "price": 3100.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:碳酸锂": {
+  "xyzq:price:碳酸锂(电池级,江苏)": {
     "productName": "碳酸锂",
     "price": 160000.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:轻质纯碱（华东）": {
+  "xyzq:price:纯碱(轻质,华东)": {
     "productName": "纯碱",
     "price": 1050.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:PP（余姚市场J340/扬子）": {
+  "xyzq:price:聚丙烯(PP)": {
     "productName": "聚丙烯",
-    "price": 9300.0,
+    "price": 8050.0,
     "unit": "元/吨",
     "source": "cj"
   },
@@ -65,25 +65,13 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:尿素（华鲁恒升小颗粒）": {
-    "productName": "尿素",
-    "price": 1750.0,
-    "unit": "元/吨",
-    "source": "cj"
-  },
-  "xyzq:price:复合肥(45%CL,湖北)": {
-    "productName": "复合肥",
-    "price": 3000.0,
-    "unit": "元/吨",
-    "source": "xyzq"
-  },
   "cj:price:葡萄糖": {
     "productName": "淀粉糖",
     "price": 3095.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:味精": {
+  "xyzq:price:味精(国内)": {
     "productName": "味精",
     "price": 7183.0,
     "unit": "元/吨",
@@ -95,11 +83,17 @@
     "unit": "元/千克",
     "source": "xyzq"
   },
-  "cj:price:甲醇（长三角）": {
+  "xyzq:price:甲醇(华东)": {
     "productName": "甲醇",
     "price": 2525.0,
     "unit": "元/吨",
     "source": "xyzq"
+  },
+  "cj:price:PP（余姚市场J340/扬子）": {
+    "productName": "聚烯烃",
+    "price": 9400.0,
+    "unit": "元/吨",
+    "source": "cj"
   },
   "cj:price:LNG": {
     "productName": "清洁能源",
@@ -107,19 +101,19 @@
     "unit": "美元/MMBtu",
     "source": "xyzq"
   },
-  "cj:price:PVC（华东电石法）": {
+  "xyzq:price:PVC(电石法,长三角)": {
     "productName": "PVC",
     "price": 4355.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:32%隔膜烧碱（华东）": {
+  "xyzq:price:烧碱(32%离子膜,华北)": {
     "productName": "烧碱",
     "price": 640.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:粘胶短纤（华东）": {
+  "xyzq:price:粘胶短纤(1.5D,38毫米)": {
     "productName": "粘胶短纤",
     "price": 14150.0,
     "unit": "元/吨",
@@ -131,7 +125,7 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:生猪": {
+  "xyzq:price:生猪价格": {
     "productName": "生猪",
     "price": 12255.0,
     "unit": "元/吨",
@@ -143,9 +137,9 @@
     "unit": "元/千克",
     "source": "xyzq"
   },
-  "cj:price:钛白粉（锐钛型，攀钢钒钛）": {
+  "xyzq:price:钛白粉(金红石型,华东)": {
     "productName": "钛白粉",
-    "price": 14000.0,
+    "price": 16700.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
@@ -155,84 +149,35 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:草铵膦": {
+  "xyzq:price:草铵膦": {
     "productName": "草铵膦",
     "price": 48000.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:丁酮（华东）": {
+  "xyzq:price:丁酮(华东)": {
     "productName": "甲乙酮",
     "price": 6550.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:顺酐": {
+  "xyzq:price:顺酐(华东)": {
     "productName": "顺酐",
     "price": 6350.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:丁二烯（上海石化）": {
+  "xyzq:price:丁二烯(华东)": {
     "productName": "丁二烯",
     "price": 8625.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:草甘膦": {
+  "xyzq:price:草甘膦(华东)": {
     "productName": "草甘膦",
     "price": 26500.0,
     "unit": "元/吨",
     "source": "xyzq"
-  },
-  "cj:price:烯草酮": {
-    "productName": "烯草酮",
-    "price": 83000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-07"
-  },
-  "cj:price:阿维菌素": {
-    "productName": "阿维菌素",
-    "price": 440000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-07"
-  },
-  "cj:price:吡虫啉": {
-    "productName": "吡虫啉",
-    "price": 76000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-07"
-  },
-  "cj:price:吡蚜酮": {
-    "productName": "吡蚜酮",
-    "price": 110000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-07"
-  },
-  "cj:price:嘧菌酯": {
-    "productName": "嘧菌酯",
-    "price": 134000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-07"
-  },
-  "cj:price:代森锰锌": {
-    "productName": "代森锰锌",
-    "price": 21000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-07"
-  },
-  "cj:price:福美双": {
-    "productName": "福美双",
-    "price": 21000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-07"
   },
   "cj:price:DMC": {
     "productName": "有机硅",
@@ -240,7 +185,7 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:PTA（华东）": {
+  "xyzq:price:PTA(华东)": {
     "productName": "PTA",
     "price": 5645.0,
     "unit": "元/吨",
@@ -252,7 +197,7 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:对二甲苯（PX）": {
+  "xyzq:price:PX(华东)": {
     "productName": "PX",
     "price": 7900.0,
     "unit": "元/吨",
@@ -264,7 +209,7 @@
     "unit": "万元/吨",
     "source": "xyzq"
   },
-  "cj:price:三氯蔗糖": {
+  "xyzq:price:三氯蔗糖": {
     "productName": "三氯蔗糖",
     "price": 10.0,
     "unit": "万元/吨",
@@ -276,7 +221,7 @@
     "unit": "万元/吨",
     "source": "xyzq"
   },
-  "cj:price:丙烯酸": {
+  "xyzq:price:丙烯酸(华东)": {
     "productName": "丙烯酸",
     "price": 6200.0,
     "unit": "元/吨",
@@ -294,7 +239,7 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:液氯（华东）": {
+  "xyzq:price:液氯(山东)": {
     "productName": "液氯",
     "price": -150.0,
     "unit": "元/吨",
@@ -306,11 +251,11 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:甲醛（长三角）": {
+  "xyzq:price:甲醛(河北)": {
     "productName": "甲醛",
-    "price": 1450.0,
+    "price": 1250.0,
     "unit": "元/吨",
-    "source": "cj"
+    "source": "xyzq"
   },
   "cj:price:多聚甲醛": {
     "productName": "多聚甲醛",
@@ -324,13 +269,13 @@
     "unit": "元/吨",
     "source": "cj"
   },
-  "lme:price:WTI原油": {
+  "xyzq:price:WTI期货(主连合约)": {
     "productName": "原油",
-    "price": 68.69,
+    "price": 68.82,
     "unit": "美元/桶",
-    "source": "cj"
+    "source": "xyzq"
   },
-  "cj:price:R32": {
+  "xyzq:price:R32(浙江)": {
     "productName": "制冷剂",
     "price": 64000.0,
     "unit": "元/吨",
@@ -342,55 +287,67 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:TDI（华东）": {
+  "cj:price:32%隔膜烧碱（华东）": {
+    "productName": "基础化工",
+    "price": 640.0,
+    "unit": "元/吨",
+    "source": "xyzq"
+  },
+  "xyzq:price:TDI(T80,华东)": {
     "productName": "TDI",
     "price": 25750.0,
-    "unit": "元/吨",
+    "unit": "",
     "source": "xyzq_detail"
   },
-  "cj:price:PC": {
+  "xyzq:price:聚碳酸酯PC(科思创2805,华东)": {
     "productName": "聚碳酸酯",
     "price": 15950.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:蛋氨酸": {
+  "xyzq:price:固体蛋氨酸(山东)": {
     "productName": "蛋氨酸",
     "price": 33.5,
     "unit": "元/千克",
     "source": "xyzq"
   },
-  "cj:price:VA": {
+  "xyzq:price:维生素A(50万IU/g,国产)": {
     "productName": "维生素A",
-    "price": 65.5,
+    "price": 60.5,
+    "unit": "元/千克",
+    "source": "cj"
+  },
+  "xyzq:price:维生素E(50万IU/g,国产)": {
+    "productName": "维生素E",
+    "price": 74.0,
     "unit": "元/千克",
     "source": "cj"
   },
   "cj:price:分散染料": {
     "productName": "染料",
-    "price": 23.0,
+    "price": 24.0,
     "unit": "元/千克",
     "source": "cj"
   },
   "cj:price:PTFE": {
     "productName": "含氟聚合物",
-    "price": 790.0,
+    "price": 810.0,
     "unit": "美元/吨",
     "source": "cj"
   },
-  "cj:price:醋酸（华东）": {
+  "xyzq:price:醋酸(华东)": {
     "productName": "醋酸",
     "price": 3020.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:DMF（华东）": {
+  "xyzq:price:DMF(华东)": {
     "productName": "DMF",
     "price": 4550.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:己二酸（华东）": {
+  "xyzq:price:己二酸(华东)": {
     "productName": "己二酸",
     "price": 7500.0,
     "unit": "元/吨",
@@ -416,11 +373,11 @@
   },
   "cj:price:聚烯烃": {
     "productName": "高分子材料",
-    "price": 7300.0,
+    "price": 7900.0,
     "unit": "元/吨",
     "source": "cj"
   },
-  "cj:price:环氧树脂": {
+  "xyzq:price:环氧树脂(E51,华东)": {
     "productName": "环氧树脂",
     "price": 13500.0,
     "unit": "元/吨",
@@ -438,25 +395,25 @@
     "unit": "元/吨",
     "source": "cj"
   },
-  "cj:price:硫酸": {
+  "xyzq:price:硫酸(98%,长三角)": {
     "productName": "硫酸",
     "price": 2750.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:苯酚(华东)": {
+  "xyzq:price:苯酚(华东)": {
     "productName": "苯酚",
     "price": 7675.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:丙酮(华东)": {
+  "xyzq:price:丙酮(华东)": {
     "productName": "丙酮",
     "price": 4725.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:双酚A": {
+  "xyzq:price:双酚A(华东)": {
     "productName": "双酚A",
     "price": 8275.0,
     "unit": "元/吨",
@@ -464,11 +421,17 @@
   },
   "cj:price:MDI": {
     "productName": "工程服务",
-    "price": 16300.0,
+    "price": 16700.0,
     "unit": "元/吨",
     "source": "cj"
   },
-  "cj:price:天然橡胶（上海地区）": {
+  "cj:price:轻质纯碱（华东）": {
+    "productName": "化工品贸易",
+    "price": 1050.0,
+    "unit": "元/吨",
+    "source": "xyzq"
+  },
+  "xyzq:price:天然橡胶(国产5号标胶)": {
     "productName": "天然橡胶",
     "price": 16786.0,
     "unit": "元/吨",
@@ -480,19 +443,25 @@
     "unit": "天",
     "source": "xyzq"
   },
-  "cj:price:电石（华东）": {
+  "xyzq:price:电石(西北)": {
     "productName": "电石",
     "price": 2612.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:PET切片（华东）": {
-    "productName": "聚酯切片",
-    "price": 6806.0,
+  "xyzq:price:涤纶长丝(POY)": {
+    "productName": "涤纶长丝",
+    "price": 8000.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:环氧丙烷（华东）": {
+  "xyzq:price:聚酯切片(瓶级)": {
+    "productName": "聚酯切片",
+    "price": 6900.0,
+    "unit": "元/吨",
+    "source": "xyzq"
+  },
+  "xyzq:price:环氧丙烷(华东)": {
     "productName": "环氧丙烷",
     "price": 7950.0,
     "unit": "元/吨",
@@ -504,19 +473,37 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
+  "xyzq:price:美国Henry Hub期货(主连合约)": {
+    "productName": "天然气",
+    "price": 3.196,
+    "unit": "美元/MMBtu",
+    "source": "xyzq"
+  },
+  "cj:price:92#汽油": {
+    "productName": "成品油",
+    "price": 9673.0,
+    "unit": "元/吨",
+    "source": "xyzq"
+  },
   "cj:price:PPS": {
     "productName": "新材料",
-    "price": 9300.0,
+    "price": 9400.0,
     "unit": "元/吨",
     "source": "cj"
   },
-  "cj:price:甲基硫菌灵": {
+  "xyzq:price:多菌灵(98%,华东)": {
+    "productName": "多菌灵",
+    "price": 35500.0,
+    "unit": "元/吨",
+    "source": "xyzq"
+  },
+  "xyzq:price:甲基硫菌": {
     "productName": "甲基硫菌灵",
     "price": 31000.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:敌草隆": {
+  "xyzq:price:敌草隆": {
     "productName": "敌草隆",
     "price": 42500.0,
     "unit": "元/吨",
@@ -534,46 +521,52 @@
     "unit": "元/吨",
     "source": "cj"
   },
-  "cj:price:钛白粉(金红石)": {
-    "productName": "钛白粉",
-    "price": 16700.0,
-    "unit": "元/吨",
-    "source": "xyzq"
-  },
   "cj:price:钛精矿": {
     "productName": "钛精矿",
     "price": 1390.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "lme:price:黄金": {
+  "xyzq:price:铜": {
+    "productName": "铜",
+    "price": 12.56,
+    "unit": "万元/吨",
+    "source": "xyzq"
+  },
+  "xyzq:price:黄金": {
     "productName": "黄金",
     "price": 4164.15,
     "unit": "美元/盎司",
     "source": "xyzq"
   },
-  "lme:price:锌": {
+  "xyzq:price:锌": {
     "productName": "锌",
     "price": 30500.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:聚乙烯醇PVA": {
+  "xyzq:price:PVA(1799,四川维尼纶)": {
     "productName": "PVA",
     "price": 11900.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:醋酸乙烯（华东）": {
+  "xyzq:price:醋酸乙烯(华东)": {
     "productName": "醋酸乙烯",
     "price": 5850.0,
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "lme:price:钴": {
+  "xyzq:price:钴": {
     "productName": "钴",
     "price": 37.85,
     "unit": "万元/吨",
+    "source": "xyzq"
+  },
+  "lme:price:黄金": {
+    "productName": "金银",
+    "price": 4164.15,
+    "unit": "美元/盎司",
     "source": "xyzq"
   },
   "lme:price:铝": {
@@ -582,11 +575,11 @@
     "unit": "元/平方米",
     "source": "xyzq"
   },
-  "cj:price:磷酸铁锂": {
+  "xyzq:price:磷酸铁锂正极材料": {
     "productName": "磷酸铁锂",
-    "price": 10100.0,
-    "unit": "元/吨",
-    "source": "cj"
+    "price": 5.24,
+    "unit": "万元/吨",
+    "source": "xyzq"
   },
   "cj:price:硝酸铵": {
     "productName": "工业炸药",
@@ -594,333 +587,10 @@
     "unit": "元/吨",
     "source": "xyzq"
   },
-  "cj:price:AES": {
-    "productName": "表面活性剂",
-    "price": 10318.0,
+  "xyzq:price:硝酸铵(山东)": {
+    "productName": "硝酸铵",
+    "price": 2000.0,
     "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:AEO-9": {
-    "productName": "表面活性剂",
-    "price": 12238.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:硬脂酸": {
-    "productName": "硬脂酸",
-    "price": 9300.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-05"
-  },
-  "cj:price:甘油": {
-    "productName": "甘油",
-    "price": 8408.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:异丙醇": {
-    "productName": "异丙醇",
-    "price": 6125.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:丙二醇": {
-    "productName": "丙二醇",
-    "price": 8545.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:二乙二醇": {
-    "productName": "二乙二醇",
-    "price": 8068.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:二甲基甲酰胺": {
-    "productName": "二甲基甲酰胺",
-    "price": 4548.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:乙腈": {
-    "productName": "乙腈",
-    "price": 9444.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:丙烯酰胺": {
-    "productName": "丙烯酰胺",
-    "price": 12946.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:乙醇胺": {
-    "productName": "乙醇胺",
-    "price": 6685.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:氯乙酸": {
-    "productName": "氯乙酸",
-    "price": 4727.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-05-31"
-  },
-  "cj:price:甲基丙烯酸甲酯": {
-    "productName": "甲基丙烯酸甲酯",
-    "price": 13072.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:碳酸二甲酯": {
-    "productName": "碳酸二甲酯",
-    "price": 4510.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:氢氟酸": {
-    "productName": "氢氟酸",
-    "price": 15265.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:盐酸": {
-    "productName": "盐酸",
-    "price": 132.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:过氧化氢": {
-    "productName": "双氧水",
-    "price": 2883.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:氨水": {
-    "productName": "氨水",
-    "price": 1907.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-05-31"
-  },
-  "cj:price:乙二醇甲醚": {
-    "productName": "乙二醇甲醚",
-    "price": 11519.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "lme:price:钴_新": {
-    "productName": "钴",
-    "price": 405228.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "lme:price:铂": {
-    "productName": "铂",
-    "price": 419.5,
-    "unit": "元/克",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "lme:price:钯": {
-    "productName": "钯",
-    "price": 326.6,
-    "unit": "元/克",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "lme:price:铑": {
-    "productName": "铑",
-    "price": 2097.9,
-    "unit": "元/克",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "lme:price:铌": {
-    "productName": "铌",
-    "price": 653.3,
-    "unit": "元/千克",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:金属镓": {
-    "productName": "镓",
-    "price": 2066.0,
-    "unit": "元/千克",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:金属铍": {
-    "productName": "铍",
-    "price": 8328.0,
-    "unit": "元/千克",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:铼": {
-    "productName": "铼",
-    "price": 47098.0,
-    "unit": "元/千克",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "lme:price:氧化铝": {
-    "productName": "氧化铝",
-    "price": 3670.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:碳酸锂_电池级": {
-    "productName": "碳酸锂(电池级)",
-    "price": 163525.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:碳酸锂_工业级": {
-    "productName": "碳酸锂(工业级)",
-    "price": 159914.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:正磷酸铁": {
-    "productName": "磷酸铁",
-    "price": 15933.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:多晶硅片": {
-    "productName": "硅片",
-    "price": 0.49,
-    "unit": "元/片",
-    "source": "wind",
-    "date": "2026-07-08"
-  },
-  "cj:price:石英砂": {
-    "productName": "石英砂",
-    "price": 274.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-05-31"
-  },
-  "cj:price:玻璃纤维纱线": {
-    "productName": "玻璃纤维",
-    "price": 12805.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-05-31"
-  },
-  "cj:price:玻璃纤维": {
-    "productName": "玻璃纤维",
-    "price": 11899.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-05-31"
-  },
-  "cj:price:阿斯巴甜": {
-    "productName": "甜味剂",
-    "price": 70.6,
-    "unit": "元/千克",
-    "source": "wind",
-    "date": "2026-05-31"
-  },
-  "cj:price:三氯蔗糖_新": {
-    "productName": "三氯蔗糖",
-    "price": 91.4,
-    "unit": "元/千克",
-    "source": "wind",
-    "date": "2026-05-31"
-  },
-  "cj:price:聚合MDI": {
-    "productName": "聚合MDI",
-    "price": 16800.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:PP": {
-    "productName": "聚丙烯",
-    "price": 8650.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:LLDPE": {
-    "productName": "LLDPE",
-    "price": 7600.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-06-30"
-  },
-  "cj:price:PC_新": {
-    "productName": "聚碳酸酯",
-    "price": 14650.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:ABS": {
-    "productName": "ABS",
-    "price": 13000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-12"
-  },
-  "cj:price:碳纤维": {
-    "productName": "碳纤维",
-    "price": 576.0,
-    "unit": "元/千克",
-    "source": "wind",
-    "date": "2024-12-31"
-  },
-  "cj:price:聚乙二醇": {
-    "productName": "聚乙二醇",
-    "price": 8080.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-10"
-  },
-  "cj:price:NMP": {
-    "productName": "NMP",
-    "price": 9600.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "lme:price:铁矿石": {
-    "productName": "铁矿石",
-    "price": 931.07,
-    "unit": "元/湿吨",
-    "source": "wind",
-    "date": "2026-07-13"
-  },
-  "cj:price:钨精矿": {
-    "productName": "钨精矿",
-    "price": 690000.0,
-    "unit": "元/吨",
-    "source": "wind",
-    "date": "2026-07-13"
+    "source": "xyzq"
   }
 }
