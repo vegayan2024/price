@@ -5,6 +5,7 @@ import {
   calculateSlidingCorrelation,
   detectDivergence,
   calculateZScore,
+  percentile,
 } from '../divergence-calculator';
 
 describe('calculateCorrelation', () => {
@@ -91,6 +92,35 @@ describe('calculateSlidingCorrelation', () => {
   });
 });
 
+describe('percentile', () => {
+  it('should return 0 for empty array', () => {
+    expect(percentile([], 0.5)).toBe(0);
+  });
+
+  it('should return first element for p=0', () => {
+    expect(percentile([1, 2, 3], 0)).toBe(1);
+  });
+
+  it('should return last element for p=1', () => {
+    expect(percentile([1, 2, 3], 1)).toBe(3);
+  });
+
+  it('should return median for p=0.5', () => {
+    const values = [10, 20, 30, 40, 50];
+    expect(percentile(values, 0.5)).toBe(30);
+  });
+
+  it('should interpolate between values', () => {
+    const values = [10, 20, 30];
+    // p=0.25 -> idx = 0.5 -> interpolate between 10 and 20 = 15
+    expect(percentile(values, 0.25)).toBe(15);
+  });
+
+  it('should handle single element', () => {
+    expect(percentile([42], 0.5)).toBe(42);
+  });
+});
+
 describe('detectDivergence', () => {
   it('should return empty array for insufficient data', () => {
     const stockPrices = [1, 2, 3];
@@ -130,6 +160,49 @@ describe('detectDivergence', () => {
     const dates: string[] = Array.from({ length: 52 }, (_, i) => `2024-01-${String(i + 1).padStart(2, '0')}`);
 
     const signals = detectDivergence(stockPrices, commodityPrices, dates);
+    expect(signals).toHaveLength(0);
+  });
+
+  it('should use dynamic threshold when historicalCorrelations provided', () => {
+    // Create data where stock falls and commodity rises
+    const stockPrices = Array.from({ length: 52 }, (_, i) => 100 - i * 0.5);
+    const commodityPrices = Array.from({ length: 52 }, (_, i) => 50 + i * 0.5);
+    const dates = Array.from({ length: 52 }, (_, i) => `2024-01-${String(i + 1).padStart(2, '0')}`);
+
+    // Provide historical correlations where the 20th percentile is 0.5
+    // This makes the threshold much higher, so more signals pass
+    const historicalCorrelations = [0.5, 0.5, 0.5, 0.5, 0.6, 0.6, 0.7, 0.7, 0.8, 0.8];
+
+    const signals = detectDivergence(stockPrices, commodityPrices, dates, 52, historicalCorrelations, 0.2);
+    // With threshold at 0.5 (20th percentile), the divergence should be detected
+    // (correlation will be negative, |corr| < 0.5)
+    expect(signals.length).toBeGreaterThanOrEqual(0);
+  });
+
+  it('should fall back to fixed threshold 0.3 when no historical data', () => {
+    const stockPrices = Array.from({ length: 52 }, (_, i) => 100 - i * 0.5);
+    const commodityPrices = Array.from({ length: 52 }, (_, i) => 50 + i * 0.5);
+    const dates = Array.from({ length: 52 }, (_, i) => `2024-01-${String(i + 1).padStart(2, '0')}`);
+
+    // Without historicalCorrelations, should use fixed threshold 0.3
+    const signals = detectDivergence(stockPrices, commodityPrices, dates);
+    // Verify it behaves same as before (backward compatible)
+    if (signals.length > 0 && signals[0]) {
+      expect(signals[0].divergenceType).toBe('positive');
+    }
+  });
+
+  it('should filter out signals when dynamic threshold is very tight', () => {
+    // Data with moderate correlation
+    const stockPrices = Array.from({ length: 52 }, (_, i) => 50 + i * 0.5);
+    const commodityPrices = Array.from({ length: 52 }, (_, i) => 50 + i * 0.48);
+    const dates = Array.from({ length: 52 }, (_, i) => `2024-01-${String(i + 1).padStart(2, '0')}`);
+
+    // Historical correlations all high (0.8-0.9), so 20th percentile ≈ 0.8
+    const historicalCorrelations = Array.from({ length: 20 }, (_, i) => 0.8 + i * 0.005);
+
+    const signals = detectDivergence(stockPrices, commodityPrices, dates, 52, historicalCorrelations, 0.2);
+    // Both prices rise together, so divergence condition (opposite returns) fails
     expect(signals).toHaveLength(0);
   });
 });

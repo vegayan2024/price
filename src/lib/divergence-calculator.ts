@@ -79,10 +79,19 @@ export function calculateSlidingCorrelation(
 
 /**
  * 检测背离信号（只取最近一年数据）
+ *
+ * 背离条件使用动态百分位阈值代替固定阈值：
+ * 基于 Gorton & Rouwenhorst (2006) 和 Engle (2002) 的研究，商品-股票相关性
+ * 具有时变特征，在不同市场体制下差异显著。使用历史滑动相关性的百分位作为阈值，
+ * 能自适应低相关性时期（正常）和高相关性时期（危机）。
+ *
  * @param stockPrices 股票价格序列
  * @param commodityPrices 商品价格序列
  * @param dates 日期序列
  * @param windowSize 检测窗口大小（默认52周=1年）
+ * @param historicalCorrelations 可选：历史滑动相关性序列，用于动态计算阈值百分位。
+ *        若不提供则回退到固定阈值 0.3（兼容旧行为）。
+ * @param percentileThreshold 百分位阈值（默认0.2，即20%分位）
  * @returns 背离信号数组
  */
 export function detectDivergence(
@@ -90,6 +99,8 @@ export function detectDivergence(
   commodityPrices: number[],
   dates: string[],
   windowSize: number = 52,
+  historicalCorrelations?: number[],
+  percentileThreshold: number = 0.2,
 ): DivergenceSignal[] {
   const signals: DivergenceSignal[] = [];
   const n = Math.min(stockPrices.length, commodityPrices.length);
@@ -113,7 +124,14 @@ export function detectDivergence(
   const correlation = calculateCorrelation(stockReturns, commodityReturns);
 
   // 背离条件：相关性较低且方向相反
-  const divergenceThreshold = 0.3;
+  // 动态阈值：若提供历史相关性序列，使用百分位；否则回退到固定阈值
+  let divergenceThreshold: number;
+  if (historicalCorrelations && historicalCorrelations.length > 0) {
+    const sorted = [...historicalCorrelations].sort((a, b) => a - b);
+    divergenceThreshold = percentile(sorted, percentileThreshold);
+  } else {
+    divergenceThreshold = 0.3;
+  }
   const returnThreshold = 0.10;
 
   if (
@@ -142,6 +160,28 @@ export function detectDivergence(
   }
 
   return signals;
+}
+
+/**
+ * 计算百分位阈值
+ * 基于学术研究 (Gorton & Rouwenhorst 2006, Engle 2002)，商品-股票相关性具有时变特征，
+ * 使用历史分布的百分位比固定阈值更能适应不同市场体制。
+ * @param sortedValues 已排序的数值数组
+ * @param p 百分位 (0-1)
+ * @returns 对应百分位的值
+ */
+export function percentile(sortedValues: number[], p: number): number {
+  if (sortedValues.length === 0) return 0;
+  if (p <= 0) return sortedValues[0]!;
+  if (p >= 1) return sortedValues[sortedValues.length - 1]!;
+
+  const idx = (sortedValues.length - 1) * p;
+  const lower = Math.floor(idx);
+  const upper = Math.ceil(idx);
+  if (lower === upper) return sortedValues[lower]!;
+
+  const weight = idx - lower;
+  return sortedValues[lower]! * (1 - weight) + sortedValues[upper]! * weight;
 }
 
 /**

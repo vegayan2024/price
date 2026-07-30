@@ -1,5 +1,5 @@
 import type { AppData, Company, DivergenceSignal, CorrelationData, PricePoint, ValuationData, FinancialData } from "../types";
-import { calculateCorrelation, calculateReturns, detectDivergence } from "./divergence-calculator";
+import { calculateCorrelation, calculateReturns, calculateSlidingCorrelation, detectDivergence } from "./divergence-calculator";
 import { lazyLoad, prefetch } from "./lazy-data";
 
 interface FetchOptions {
@@ -60,6 +60,11 @@ function alignPriceSeries(
 
 /**
  * 计算单个公司的背离信号
+ *
+ * 使用动态百分位阈值检测背离：
+ * 基于全量历史数据计算52周滑动相关性序列，取其20%分位作为当前相关性阈值，
+ * 以自适应不同市场体制下的相关性变化（Gorton & Rouwenhorst 2006, Engle 2002）。
+ *
  * @param company 公司信息
  * @param stockPrices 股票价格序列
  * @param commodityPrices 商品价格映射
@@ -88,8 +93,18 @@ function calculateCompanyDivergence(
 
     if (recentAlignedStock.length < 52) continue;
 
-    // 使用 detectDivergence 函数检测背离
-    const companySignals = detectDivergence(recentAlignedStock, recentAlignedCommodity, recentDates);
+    // 计算全量历史的52周滑动相关性，用于动态百分位阈值
+    const allStockReturns = calculateReturns(alignedStock);
+    const allCommodityReturns = calculateReturns(alignedCommodity);
+    const historicalCorrelations = calculateSlidingCorrelation(
+      allStockReturns, allCommodityReturns, 52,
+    );
+
+    // 使用 detectDivergence 函数检测背离，传入历史相关性用于动态阈值
+    const companySignals = detectDivergence(
+      recentAlignedStock, recentAlignedCommodity, recentDates, 52,
+      historicalCorrelations,
+    );
 
     // 添加公司信息
     for (const signal of companySignals) {
