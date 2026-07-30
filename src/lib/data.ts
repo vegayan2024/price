@@ -94,10 +94,9 @@ function calculateCompanyDivergence(
     if (recentAlignedStock.length < 52) continue;
 
     // 计算全量历史的52周滑动相关性，用于动态百分位阈值
-    const allStockReturns = calculateReturns(alignedStock);
-    const allCommodityReturns = calculateReturns(alignedCommodity);
+    // 注意：calculateSlidingCorrelation 内部已调用 calculateReturns，此处传原始价格
     const historicalCorrelations = calculateSlidingCorrelation(
-      allStockReturns, allCommodityReturns, 52,
+      alignedStock, alignedCommodity, 52,
     );
 
     // 使用 detectDivergence 函数检测背离，传入历史相关性用于动态阈值
