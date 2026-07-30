@@ -128,7 +128,8 @@ export function detectDivergence(
   let divergenceThreshold: number;
   if (historicalCorrelations && historicalCorrelations.length > 0) {
     const sorted = [...historicalCorrelations].sort((a, b) => a - b);
-    divergenceThreshold = percentile(sorted, percentileThreshold);
+    // 取绝对值：百分位可能为负（相关性可正可负），而比较时用的是 |correlation|
+    divergenceThreshold = Math.abs(percentile(sorted, percentileThreshold));
   } else {
     divergenceThreshold = 0.3;
   }
